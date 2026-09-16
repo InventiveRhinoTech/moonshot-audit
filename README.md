@@ -5,9 +5,12 @@ against two of my own RAG applications, using the AI Verify Foundation's
 **[Project Moonshot](https://aiverify-foundation.github.io/moonshot/)**, and published everything —
 including the results that make me look bad and the number I got wrong first.
 
-This repository is the evidence: the connectors, the run scripts, and every raw result file behind
-the write-up. Nothing here is a summary. If a number is quoted anywhere, the run that produced it
-is in `raw-results/`.
+**📄 The full report is [`REPORT.md`](REPORT.md)** — all four risks, the comparison against my own
+evaluation harness, the seven things that scored badly, and what could not be measured at all.
+
+This repository is the evidence behind it: the connectors, the run scripts, and every raw result
+file. Nothing here is a summary. If a number is quoted anywhere, the run that produced it is in
+`raw-results/`.
 
 ---
 
@@ -215,6 +218,17 @@ deletes and re-fetches them. The authoritative copies of my files live here and 
 - **This is not a certification.** It is a self-administered run of a published voluntary test
   suite, with the report open for inspection. It is not the AI Tester Accreditation Programme and
   not any accreditation.
+
+---
+
+## Licence
+
+MIT — see [`LICENSE`](LICENSE). The connectors and scripts are here to be reused; that is most of
+why this repository is public.
+
+The `raw-results/` files are records of runs against public benchmark datasets that carry their own
+upstream licences, and the report is a description of what happened rather than a reusable
+component. Attribution is welcome but not required.
 
 ---
 
