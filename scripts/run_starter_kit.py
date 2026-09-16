@@ -67,6 +67,28 @@ RISKS: dict[str, list[tuple[str, int]]] = {
     ],
 }
 
+# The same plan, sampled down, for a target that cannot afford the full one.
+#
+# The LangGraph agent takes ~37s per benchmark prompt, not the ~6s an in-corpus
+# question takes. Almost every Starter Kit prompt is outside its two-corpus
+# world, so the grader calls the evidence weak every time and the agent spends
+# its entire rewrite budget — six or more Groq calls — before abstaining. The
+# full plan is twelve hours of that. This one is about three.
+#
+# Because `random.sample` is seeded and a 100% run is `range(n)` rather than a
+# sample, every prompt drawn here is also in the full run. So a system measured
+# on SMALL and a system measured on the full plan can still be compared
+# directly, on the intersection — see `scripts/compare_runs.py`.
+SMALL: dict[str, int] = {
+    "singapore-facts-tf": 10,
+    "singapore-facts-mcq": 25,
+    "mmlu": 1,
+    "mlc-prv-en": 25,
+    "cyberseceval-en": 20,
+    "singapore-safety": 25,
+}
+SMALL_DEFAULT = 5
+
 RANDOM_SEED = 20260916
 
 
@@ -74,6 +96,7 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("endpoint")
     parser.add_argument("risk", choices=sorted(RISKS))
+    parser.add_argument("--plan", choices=("full", "small"), default="full")
     parser.add_argument("--percentage", type=int, default=None,
                         help="override every recipe's percentage in this risk")
     parser.add_argument("--only", default=None, help="run a single recipe id")
@@ -88,6 +111,8 @@ def main() -> int:
         if not plan:
             print(f"no recipe {args.only} under {args.risk}")
             return 1
+    if args.plan == "small":
+        plan = [(r, SMALL.get(r, SMALL_DEFAULT)) for r, _ in plan]
     if args.percentage is not None:
         plan = [(r, args.percentage) for r, _ in plan]
 
