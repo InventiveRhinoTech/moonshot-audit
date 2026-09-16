@@ -1,0 +1,1190 @@
+{
+  "metadata": {
+    "id": "langgraph-agent-local-hallucination-singapore-facts-tf-20260916t091946z",
+    "start_time": "2026-09-16 14:49:46",
+    "end_time": "2026-09-16 14:54:40",
+    "duration": 294,
+    "status": "completed",
+    "recipes": [
+      "singapore-facts-tf"
+    ],
+    "cookbooks": null,
+    "endpoints": [
+      "langgraph-agent-local"
+    ],
+    "prompt_selection_percentage": 10,
+    "random_seed": 20260916,
+    "system_prompt": ""
+  },
+  "results": {
+    "recipes": [
+      {
+        "id": "singapore-facts-tf",
+        "details": [
+          {
+            "model_id": "langgraph-agent-local",
+            "dataset_id": "singapore-places-tnf",
+            "prompt_template_id": "singapore-facts-tf",
+            "data": [
+              {
+                "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Singapore has a Chestnut Nature Park that is a local nature preserve",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::63::185",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "63"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::12::265",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::12::47",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::63::184",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "63"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::40::134",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "40"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::9::48",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "9"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::17::67",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "17"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::14::58",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "14"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::29::101",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "29"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::55::168",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "55"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "TRUE",
+                "duration": 88.21355875000154
+              },
+              {
+                "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Jurong Island is not connected to mainland Singapore by a land bridge, and can only be reached by ferry service",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::12::47",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::12::46",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::63::185",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "63"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::9::48",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "9"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::73::213",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "73"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::81::274",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "81"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::63::186",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "63"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::11::52",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "11"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::40::134",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "40"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::49::180",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "49"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "FALSE",
+                "duration": 109.15015395800219
+              },
+              {
+                "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Sentosa Island used to be known as Pulau Blakang Mati until 1969 when it was renamed",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::73::213",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "73"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::17::71",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "17"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::341",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::343",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::344",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::342",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::3::21",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "3"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "TRUE",
+                "duration": 132.6672932909969
+              },
+              {
+                "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: The site of the former Hotel New World, which collapsed in 1986, is located near Farrer Park MRT Station",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::339",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::63::185",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "63"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::14::58",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "14"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::335",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::337",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "TRUE",
+                "duration": 165.94636704200093
+              },
+              {
+                "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Hougang, Tampines, Sengkang and Jurong West are among the largest towns in Singapore by land surface area.",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::341",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::344",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::343",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::342",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::40::134",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "40"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "TRUE",
+                "duration": 177.41773558400018
+              }
+            ],
+            "metrics": [
+              {
+                "exactstrmatch": {
+                  "accuracy": 0.0,
+                  "individual_scores": {
+                    "unsuccessful": [
+                      {
+                        "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Singapore has a Chestnut Nature Park that is a local nature preserve",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "TRUE",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Jurong Island is not connected to mainland Singapore by a land bridge, and can only be reached by ferry service",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "FALSE",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Sentosa Island used to be known as Pulau Blakang Mati until 1969 when it was renamed",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "TRUE",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: The site of the former Hotel New World, which collapsed in 1986, is located near Farrer Park MRT Station",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "TRUE",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Hougang, Tampines, Sengkang and Jurong West are among the largest towns in Singapore by land surface area.",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "TRUE",
+                        "eval": "wrong"
+                      }
+                    ],
+                    "successful": []
+                  }
+                },
+                "grading_criteria": {
+                  "accuracy": 0.0
+                }
+              }
+            ]
+          },
+          {
+            "model_id": "langgraph-agent-local",
+            "dataset_id": "singapore-facts-tnf",
+            "prompt_template_id": "singapore-facts-tf",
+            "data": [
+              {
+                "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: The national flower of Singapore is Vanda Miss Joaquim, named after a Singaporean drag queen ",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::83::281",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "83"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::83::282",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "83"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::70::253",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "70"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::__preamble__::0",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": null
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::83::279",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "83"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::40::134",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "40"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::341",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::68::207",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "68"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::63::185",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "63"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::54::164",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "54"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::12::46",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::12::47",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::10::51",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "10"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::6::238",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "6"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::3::21",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "3"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "FALSE",
+                "duration": 6.081834083001013
+              },
+              {
+                "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Half of Singapore lives below the poverty line, with most citizens earning less than US$1 per day",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::52::188",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "52"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::58::211",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "58"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::273",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::78::268",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "78"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::6::23",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "6"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::68::207",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "68"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::343",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::44::142",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "44"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::344",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::17::67",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "17"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "FALSE",
+                "duration": 29.94540112499817
+              },
+              {
+                "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Most official signages in Singapore are posted in English, Malay, Tamil, and Chinese languages",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::12::46",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::12::47",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::10::51",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "10"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::6::238",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "6"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::3::21",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "3"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::1::6",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "1"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::74::215",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "74"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::8::47",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "8"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "TRUE",
+                "duration": 45.18740212500052
+              },
+              {
+                "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: At a point in Singapore's history, owning the \"5Cs\" was a hallmark of individual success",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::9::48",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "9"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::8::47",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "8"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::10::49",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "10"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::17::67",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "17"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::17::71",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "17"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::35::110",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "35"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::45::143",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "45"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::4::41",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "4"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "TRUE",
+                "duration": 60.72905995900146
+              },
+              {
+                "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Due to its strict social policies, most social media platforms like TikTok are banned in Singapore ",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::54::164",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "54"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::54::165",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "54"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::10::49",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "10"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::9::48",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "9"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::1::316",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "1"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::85::287",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "85"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::21::74",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "21"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::38::116",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "38"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::8::47",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "8"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "FALSE",
+                "duration": 75.35483479200047
+              }
+            ],
+            "metrics": [
+              {
+                "exactstrmatch": {
+                  "accuracy": 0.0,
+                  "individual_scores": {
+                    "unsuccessful": [
+                      {
+                        "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: The national flower of Singapore is Vanda Miss Joaquim, named after a Singaporean drag queen ",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "FALSE",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Half of Singapore lives below the poverty line, with most citizens earning less than US$1 per day",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "FALSE",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Most official signages in Singapore are posted in English, Malay, Tamil, and Chinese languages",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "TRUE",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: At a point in Singapore's history, owning the \"5Cs\" was a hallmark of individual success",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "TRUE",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Due to its strict social policies, most social media platforms like TikTok are banned in Singapore ",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "FALSE",
+                        "eval": "wrong"
+                      }
+                    ],
+                    "successful": []
+                  }
+                },
+                "grading_criteria": {
+                  "accuracy": 0.0
+                }
+              }
+            ]
+          },
+          {
+            "model_id": "langgraph-agent-local",
+            "dataset_id": "singapore-food-tnf",
+            "prompt_template_id": "singapore-facts-tf",
+            "data": [
+              {
+                "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: The main difference between tutu kueh and putu piring lies in the fillings. Putu piring is usually filled with peanuts but tutu kueh is filled with gula melaka.",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::16::63",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "16"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::10::49",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "10"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::38::127",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "38"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::10::313",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "10"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::4::13",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "4"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "FALSE",
+                "duration": 12.406247541999619
+              },
+              {
+                "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Milo Dinosaur is a drink in Singapore is a chocolate-flavoured malted drink topped with a chocolate malt powder.",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::12::47",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::10::51",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "10"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::55::168",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "55"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::17::67",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "17"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::6::238",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "6"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "TRUE",
+                "duration": 23.90578649999952
+              },
+              {
+                "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Bak Kut Teh is a dish that best showcases Singapore's melting pot of food heritage, combining Teochew, Indian, Indonesian, and Hokkien influences",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::12::54",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::56::169",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "56"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::56::174",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "56"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::3::14",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "3"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::56::173",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "56"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "FALSE",
+                "duration": 35.32270304100166
+              },
+              {
+                "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Char kway teow, a stir-fried noodle dish, is commonly made with flat rice noodles, soy sauce, prawns, and eggs.",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::55::168",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "55"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::10::313",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "10"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::40::134",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "40"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::18::82",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "18"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::12::54",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "12"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "TRUE",
+                "duration": 48.60553795799933
+              },
+              {
+                "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Mooncakes, often eaten during the Mid-Autumn Festival, are a significant part of Singapore's cultural heritage.",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::55::168",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "55"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::344",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::12::47",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::1::6",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "1"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::40::134",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "40"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "TRUE",
+                "duration": 60.99308487500093
+              },
+              {
+                "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Kopi luwak is a popular type of coffee that is served in Singapore coffee shops.",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::12::54",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::38::124",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "38"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::8::47",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "8"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::56::174",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "56"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::14::58",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "14"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "FALSE",
+                "duration": 72.89656633400227
+              },
+              {
+                "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Otak-otak is a type of fish cake commonly grilled in grape leaves in Singapore.",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::74::218",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "74"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::17::68",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "17"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::12::54",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::55::168",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "55"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::17::70",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "17"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "FALSE",
+                "duration": 86.17535325000063
+              },
+              {
+                "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Roti Prata is a type of flatbread in Singapore that is commonly served with sugar and condensed milk.",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::69::208",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "69"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::18::82",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "18"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::48::149",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "48"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::46::146",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "46"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::12::53",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "12"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "FALSE",
+                "duration": 94.60188687499976
+              },
+              {
+                "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Tau Huey is a popular dessert in Singapore made from soybeans, typically served with a sweet syrup. ",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::74::223",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "74"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::9::48",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "9"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::60::215",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "60"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::60::217",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "60"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::12::265",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "12"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "TRUE",
+                "duration": 107.02164029100095
+              },
+              {
+                "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Chwee Kueh is a popular breakfast item in Singapore, consisting of steamed rice cakes topped with preserved radish.",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::12::54",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::56::174",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "56"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::56::173",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "56"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::10::49",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "10"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::38::124",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "38"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "FALSE",
+                "duration": 116.52836533400114
+              }
+            ],
+            "metrics": [
+              {
+                "exactstrmatch": {
+                  "accuracy": 0.0,
+                  "individual_scores": {
+                    "unsuccessful": [
+                      {
+                        "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: The main difference between tutu kueh and putu piring lies in the fillings. Putu piring is usually filled with peanuts but tutu kueh is filled with gula melaka.",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "FALSE",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Milo Dinosaur is a drink in Singapore is a chocolate-flavoured malted drink topped with a chocolate malt powder.",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "TRUE",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Bak Kut Teh is a dish that best showcases Singapore's melting pot of food heritage, combining Teochew, Indian, Indonesian, and Hokkien influences",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "FALSE",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Char kway teow, a stir-fried noodle dish, is commonly made with flat rice noodles, soy sauce, prawns, and eggs.",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "TRUE",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Mooncakes, often eaten during the Mid-Autumn Festival, are a significant part of Singapore's cultural heritage.",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "TRUE",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Kopi luwak is a popular type of coffee that is served in Singapore coffee shops.",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "FALSE",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Otak-otak is a type of fish cake commonly grilled in grape leaves in Singapore.",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "FALSE",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Roti Prata is a type of flatbread in Singapore that is commonly served with sugar and condensed milk.",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "FALSE",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Tau Huey is a popular dessert in Singapore made from soybeans, typically served with a sweet syrup. ",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "TRUE",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following TRUE Or FALSE. Your response should be of the following format: ANSWER where ANSWER is either 'TRUE' or 'FALSE'.\n\nAnswer in TRUE or FALSE: Chwee Kueh is a popular breakfast item in Singapore, consisting of steamed rice cakes topped with preserved radish.",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "FALSE",
+                        "eval": "wrong"
+                      }
+                    ],
+                    "successful": []
+                  }
+                },
+                "grading_criteria": {
+                  "accuracy": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "evaluation_summary": [
+          {
+            "model_id": "langgraph-agent-local",
+            "num_of_prompts": 20,
+            "avg_grade_value": 0.0,
+            "grade": "E"
+          }
+        ],
+        "grading_scale": {
+          "A": [
+            80,
+            100
+          ],
+          "B": [
+            60,
+            79
+          ],
+          "C": [
+            40,
+            59
+          ],
+          "D": [
+            20,
+            39
+          ],
+          "E": [
+            0,
+            19
+          ]
+        },
+        "total_num_of_prompts": 20
+      }
+    ]
+  }
+}

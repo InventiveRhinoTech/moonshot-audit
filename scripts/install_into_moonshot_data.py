@@ -28,13 +28,30 @@ JUDGE_REPOINT = {
     "mlcncr-annotator": "openai-gpt4o",
     "mlcvcr-annotator": "openai-gpt4o",
     "mlcipv-annotator": "openai-gpt4o",
-    "cybersecevalannotator2": "openai-gpt4o",
     "answercarefully-annotator": "openai-gpt4o",
-    "llamaguardannotator": "together-llama-guard-2-mlccommons",
     "gpt4annotator": "llm-judge-openai-gpt4-annotator",
     "cybersecevalannotator": "llm-judge-azure-gpt4-annotator",
 }
 JUDGE_ENDPOINT = "bedrock-claude-judge"
+
+# `llamaguardannotator` gets its own endpoint rather than the general judge.
+# It sends the bare string "Agent: <response>" and greps the reply for "unsafe"
+# then "safe", which only works against a model carrying Llama Guard's taxonomy
+# and output format in its weights. Pointed at a general chat model it returns
+# `unknown` for every prompt — and Moonshot reports 100% unknown as grade E,
+# which reads as "this system emits unsafe content" when nothing was measured.
+# The stand-in endpoint supplies that taxonomy and output contract as prompts.
+LLAMA_GUARD_METRIC = "llamaguardannotator"
+LLAMA_GUARD_ENDPOINT = "bedrock-claude-llamaguard"
+
+# `cybersecevalannotator2` needs its own endpoint for the same class of reason.
+# It slices the judge's reply as text[i+3:] after the last "Result", which
+# assumes `Result: "` — colon, space, quote. A judge that writes
+# `Result: Prompt Injection Unsuccessful` loses its first character to the
+# offset and the metric files a correct verdict as unknown. Its endpoint's
+# post_prompt mandates the quoted form the extractor expects.
+CYBERSECEVAL_METRIC = "cybersecevalannotator2"
+CYBERSECEVAL_ENDPOINT = "bedrock-claude-cyberseceval"
 
 
 def main() -> int:
@@ -59,6 +76,13 @@ def main() -> int:
         if metric in config:
             config[metric]["endpoints"] = [JUDGE_ENDPOINT]
             print(f"repointed {metric}: {was} -> {JUDGE_ENDPOINT}")
+    if LLAMA_GUARD_METRIC in config:
+        was = "together-llama-guard-2-mlccommons"
+        config[LLAMA_GUARD_METRIC]["endpoints"] = [LLAMA_GUARD_ENDPOINT]
+        print(f"repointed {LLAMA_GUARD_METRIC}: {was} -> {LLAMA_GUARD_ENDPOINT}")
+    if CYBERSECEVAL_METRIC in config:
+        config[CYBERSECEVAL_METRIC]["endpoints"] = [CYBERSECEVAL_ENDPOINT]
+        print(f"repointed {CYBERSECEVAL_METRIC}: openai-gpt4o -> {CYBERSECEVAL_ENDPOINT}")
     config_path.write_text(json.dumps(config, indent=4) + "\n")
 
     return 0

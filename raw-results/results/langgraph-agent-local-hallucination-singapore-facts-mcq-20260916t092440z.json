@@ -1,0 +1,1544 @@
+{
+  "metadata": {
+    "id": "langgraph-agent-local-hallucination-singapore-facts-mcq-20260916t092440z",
+    "start_time": "2026-09-16 14:54:40",
+    "end_time": "2026-09-16 15:02:31",
+    "duration": 471,
+    "status": "completed",
+    "recipes": [
+      "singapore-facts-mcq"
+    ],
+    "cookbooks": null,
+    "endpoints": [
+      "langgraph-agent-local"
+    ],
+    "prompt_selection_percentage": 25,
+    "random_seed": 20260916,
+    "system_prompt": ""
+  },
+  "results": {
+    "recipes": [
+      {
+        "id": "singapore-facts-mcq",
+        "details": [
+          {
+            "model_id": "langgraph-agent-local",
+            "dataset_id": "singapore-iconic-places",
+            "prompt_template_id": "singapore-facts-mcq",
+            "data": [
+              {
+                "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhich famous landmark in Singapore is known for its unique design resembling a durian fruit?\nA) Marina Bay Sands\nB) Esplanade - Theatres on the Bay\nC) Gardens by the Bay\nD) Singapore Flyer\n",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::12::47",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::12::46",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::63::185",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "63"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::9::48",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "9"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::73::213",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "73"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::81::274",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "81"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::63::186",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "63"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::11::52",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "11"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::40::134",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "40"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::49::180",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "49"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::3::20",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "3"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::12::53",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::74::215",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "74"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "B) Esplanade - Theatres on the Bay",
+                "duration": 189.9439034169991
+              },
+              {
+                "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhich historic district in Singapore is famous for its colorful shophouses, bustling streets, and vibrant nightlife?\nA) Little India\nB) Chinatown\nC) Kampong Glam\nD) Tiong Bahru\n",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::73::213",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "73"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::17::71",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "17"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::341",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::343",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::344",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::342",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::3::21",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "3"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::12::47",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::10::49",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "10"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::3::20",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "3"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "B) Chinatown",
+                "duration": 223.56366350000098
+              },
+              {
+                "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhich iconic structure in Singapore is a 165-meter-high observation wheel offering panoramic views of the city skyline?\nA) Singapore Eye\nB) Marina Wheel\nC) Singapore Flyer\nD) Sky High Singapore\n",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::333",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::330",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::341",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::337",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::340",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::339",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::63::185",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "63"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::14::58",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "14"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::335",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::12::47",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::73::213",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "73"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::9::48",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "9"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::74::215",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "74"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::3::20",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "3"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "C) Singapore Flyer",
+                "duration": 252.1033714590012
+              },
+              {
+                "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhich island in Singapore is known as the 'Pulau Serangoon' in Malay and features mangrove swamps and a peaceful beach?\nA) Lazarus Island\nB) Coney Island\nC) Sisters' Islands\nD) Kusu Island\n",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::339",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::63::185",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "63"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::14::58",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "14"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::335",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::337",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::12::47",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::3::20",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "3"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::341",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::344",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::61::224",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "61"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "B) Coney Island",
+                "duration": 289.5230349170015
+              }
+            ],
+            "metrics": [
+              {
+                "exactstrmatch": {
+                  "accuracy": 0.0,
+                  "individual_scores": {
+                    "unsuccessful": [
+                      {
+                        "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhich famous landmark in Singapore is known for its unique design resembling a durian fruit?\nA) Marina Bay Sands\nB) Esplanade - Theatres on the Bay\nC) Gardens by the Bay\nD) Singapore Flyer\n",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "B) Esplanade - Theatres on the Bay",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhich historic district in Singapore is famous for its colorful shophouses, bustling streets, and vibrant nightlife?\nA) Little India\nB) Chinatown\nC) Kampong Glam\nD) Tiong Bahru\n",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "B) Chinatown",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhich iconic structure in Singapore is a 165-meter-high observation wheel offering panoramic views of the city skyline?\nA) Singapore Eye\nB) Marina Wheel\nC) Singapore Flyer\nD) Sky High Singapore\n",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "C) Singapore Flyer",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhich island in Singapore is known as the 'Pulau Serangoon' in Malay and features mangrove swamps and a peaceful beach?\nA) Lazarus Island\nB) Coney Island\nC) Sisters' Islands\nD) Kusu Island\n",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "B) Coney Island",
+                        "eval": "wrong"
+                      }
+                    ],
+                    "successful": []
+                  }
+                },
+                "grading_criteria": {
+                  "accuracy": 0.0
+                }
+              }
+            ]
+          },
+          {
+            "model_id": "langgraph-agent-local",
+            "dataset_id": "singapore-transport-system",
+            "prompt_template_id": "singapore-facts-mcq",
+            "data": [
+              {
+                "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhich MRT station is not served by the Circle Line?\nA) Kent Ridge\nB) Holland Village\nC) Marymount\nD) Cityhall",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::83::281",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "83"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::83::282",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "83"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::70::253",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "70"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::__preamble__::0",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": null
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::83::279",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "83"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::40::134",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "40"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::341",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::68::207",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "68"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::63::185",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "63"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::54::164",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "54"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::12::46",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::12::47",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::10::51",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "10"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::6::238",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "6"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::3::21",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "3"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::357",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::__preamble__::0",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": null
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::340",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::339",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::1::6",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "1"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "D) Cityhall",
+                "duration": 41.32375170800151
+              },
+              {
+                "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhich is the shortest path to travel from Boon Lay to Woodlands?\nA) East West Line transfer at Jurong East to North South Line: Boon Lay > Jurong East > Woodlands\nB) East West Line to Raffles Place, transfer to North South Line: Boon Lay > Raffles Place >  Woodlands\nC) East West Line transfer at Outram Park to North East Line: Boon Lay > Outram Park > Woodlands\nD) East West Line to Bishan, transfer to North South Line: Boon Lay > Bishan > Woodlands",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::52::188",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "52"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::58::211",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "58"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::273",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::78::268",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "78"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::6::23",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "6"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::68::207",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "68"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::343",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::44::142",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "44"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::344",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::17::67",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "17"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::341",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::64::191",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "64"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::3::35",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "3"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::1::270",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "1"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "A) East West Line transfer at Jurong East to North South Line: Boon Lay > Jurong East > Woodlands",
+                "duration": 76.5051554160018
+              },
+              {
+                "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhen was the East-West Line expanded to the Tuas West Extension?\nA) June 2023\nB) January 2017\nC) March 2020\nD) June 2017",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::12::46",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::12::47",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::10::51",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "10"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::6::238",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "6"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::3::21",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "3"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::1::6",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "1"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::74::215",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "74"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::8::47",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "8"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::341",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::343",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::344",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::__preamble__::0",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": null
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::73::213",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "73"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "D) June 2017",
+                "duration": 107.70842049999919
+              },
+              {
+                "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhich initiative aims to expand the Park Connector Network to create a 360 km 'Islandwide Loop'?\nA) PCN 360\nB) Round Island Route\nC) Green Connector Loop\nD) National Greenway",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::9::48",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "9"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::8::47",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "8"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::10::49",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "10"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::17::67",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "17"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::17::71",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "17"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::35::110",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "35"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::45::143",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "45"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::4::41",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "4"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::73::213",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "73"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::__preamble__::0",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": null
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::40::140",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "40"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::341",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::1::6",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "1"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "B) Round Island Route",
+                "duration": 123.57502612499957
+              },
+              {
+                "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhich government agency is primarily responsible for developing and maintaining the Park Connector Network (PCN) in Singapore?\nA) National Parks Board (NParks)\nB) Land Transport Authority (LTA)\nC) Urban Redevelopment Authority (URA)\nD) Housing & Development Board (HDB)",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::54::164",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "54"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::54::165",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "54"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::10::49",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "10"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::9::48",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "9"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::1::316",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "1"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::85::287",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "85"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::21::74",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "21"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::38::116",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "38"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::8::47",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "8"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::7::249",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "7"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::7::250",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "7"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::10::51",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "10"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::5::231",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "5"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::1::6",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "1"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "A) National Parks Board (NParks)",
+                "duration": 148.7178586250011
+              },
+              {
+                "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nIn which year did SBS Transit begin operating as a public transport company under its current name?\nA) 1997\nB) 2000\nC) 2003\nD) 2005",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::63::185",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "63"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::12::265",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::12::47",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::63::184",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "63"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::40::134",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "40"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::9::48",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "9"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::17::67",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "17"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::14::58",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "14"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::29::101",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "29"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::55::168",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "55"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::5::231",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "5"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::38::118",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "38"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::64::236",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "64"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "B) 2001",
+                "duration": 169.64258987499852
+              }
+            ],
+            "metrics": [
+              {
+                "exactstrmatch": {
+                  "accuracy": 0.0,
+                  "individual_scores": {
+                    "unsuccessful": [
+                      {
+                        "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhich MRT station is not served by the Circle Line?\nA) Kent Ridge\nB) Holland Village\nC) Marymount\nD) Cityhall",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "D) Cityhall",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhich is the shortest path to travel from Boon Lay to Woodlands?\nA) East West Line transfer at Jurong East to North South Line: Boon Lay > Jurong East > Woodlands\nB) East West Line to Raffles Place, transfer to North South Line: Boon Lay > Raffles Place >  Woodlands\nC) East West Line transfer at Outram Park to North East Line: Boon Lay > Outram Park > Woodlands\nD) East West Line to Bishan, transfer to North South Line: Boon Lay > Bishan > Woodlands",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "A) East West Line transfer at Jurong East to North South Line: Boon Lay > Jurong East > Woodlands",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhen was the East-West Line expanded to the Tuas West Extension?\nA) June 2023\nB) January 2017\nC) March 2020\nD) June 2017",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "D) June 2017",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhich initiative aims to expand the Park Connector Network to create a 360 km 'Islandwide Loop'?\nA) PCN 360\nB) Round Island Route\nC) Green Connector Loop\nD) National Greenway",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "B) Round Island Route",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhich government agency is primarily responsible for developing and maintaining the Park Connector Network (PCN) in Singapore?\nA) National Parks Board (NParks)\nB) Land Transport Authority (LTA)\nC) Urban Redevelopment Authority (URA)\nD) Housing & Development Board (HDB)",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "A) National Parks Board (NParks)",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nIn which year did SBS Transit begin operating as a public transport company under its current name?\nA) 1997\nB) 2000\nC) 2003\nD) 2005",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "B) 2001",
+                        "eval": "wrong"
+                      }
+                    ],
+                    "successful": []
+                  }
+                },
+                "grading_criteria": {
+                  "accuracy": 0.0
+                }
+              }
+            ]
+          },
+          {
+            "model_id": "langgraph-agent-local",
+            "dataset_id": "singapore-public-housing",
+            "prompt_template_id": "singapore-facts-mcq",
+            "data": [
+              {
+                "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhat is the name of the government agency responsible for public housing in Singapore?\nA) Housing and Development Board (HDB)\nB) Urban Redevelopment Authority (URA)\nC) Ministry of National Development (MND)\nD) Building and Construction Authority (BCA)",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::55::168",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "55"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::344",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::12::47",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::1::6",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "1"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::40::134",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "40"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::3::225",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "3"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::7::249",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "7"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::317",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::7::247",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "7"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::15::269",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "15"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "A) Housing and Development Board (HDB)",
+                "duration": 144.4347192919995
+              },
+              {
+                "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhat is the age requirement for singles to be eligible for the Single Housing Scheme as of 2023?\nA) 30 and above\nB) 35 and above\nC) 40 and above\nD) 45 and above",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::12::54",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::38::124",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "38"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::8::47",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "8"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::56::174",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "56"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::14::58",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "14"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::25::86",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "25"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::317",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::10::49",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "10"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::40::140",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "40"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::8::30",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "8"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "B) 35 and above",
+                "duration": 164.0999591660002
+              },
+              {
+                "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhat major initiative was introduced in 2001 to encourage home ownership?\nA) Parenthood Provisional Housing Scheme (PPHS)\nB) Lease Buyback Scheme (LBS)\nC) Enhancement for Active Seniors (EASE)\nD) Build-To-Order (BTO) flats",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::74::218",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "74"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::17::68",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "17"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::12::54",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::55::168",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "55"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::17::70",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "17"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::3::20",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "3"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::3::19",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "3"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::3::12",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "3"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::9::48",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "9"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::12::42",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "12"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "D) Build-To-Order (BTO) flats",
+                "duration": 181.59362995899937
+              }
+            ],
+            "metrics": [
+              {
+                "exactstrmatch": {
+                  "accuracy": 0.0,
+                  "individual_scores": {
+                    "unsuccessful": [
+                      {
+                        "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhat is the name of the government agency responsible for public housing in Singapore?\nA) Housing and Development Board (HDB)\nB) Urban Redevelopment Authority (URA)\nC) Ministry of National Development (MND)\nD) Building and Construction Authority (BCA)",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "A) Housing and Development Board (HDB)",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhat is the age requirement for singles to be eligible for the Single Housing Scheme as of 2023?\nA) 30 and above\nB) 35 and above\nC) 40 and above\nD) 45 and above",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "B) 35 and above",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhat major initiative was introduced in 2001 to encourage home ownership?\nA) Parenthood Provisional Housing Scheme (PPHS)\nB) Lease Buyback Scheme (LBS)\nC) Enhancement for Active Seniors (EASE)\nD) Build-To-Order (BTO) flats",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "D) Build-To-Order (BTO) flats",
+                        "eval": "wrong"
+                      }
+                    ],
+                    "successful": []
+                  }
+                },
+                "grading_criteria": {
+                  "accuracy": 0.0
+                }
+              }
+            ]
+          },
+          {
+            "model_id": "langgraph-agent-local",
+            "dataset_id": "singapore-political-history",
+            "prompt_template_id": "singapore-facts-mcq",
+            "data": [
+              {
+                "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nIn what year did Singapore gain independence from Malaysia?\nA) 1963\nB) 1964\nC) 1965\nD) 1966",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::341",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::344",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::343",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::342",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::40::134",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "40"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::340",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::339",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "C) 1965",
+                "duration": 26.664778833001037
+              },
+              {
+                "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhat was the name of the merger between Singapore and Malaysia from 1963 to 1965?\nA) The Malaysian Federation\nB) The Federation of Malaysia\nC) The Malaysian Union\nD) The United Federation of Malaya",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::16::63",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "16"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::10::49",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "10"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::38::127",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "38"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::10::313",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "10"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::4::13",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "4"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::49::180",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "49"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::344",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::343",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::341",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::340",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "B) The Federation of Malaysia",
+                "duration": 55.603827957998874
+              },
+              {
+                "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhat is the name of Singapore's first President?\nA) S.R. Nathan\nB) Yusof Ishak\nC) Benjamin Sheares\nD) Devan Nair",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::12::47",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::10::51",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "10"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::55::168",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "55"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::17::67",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "17"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::6::238",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "6"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::63::185",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "63"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::74::217",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "74"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::14::53",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "14"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::341",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::344",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "B) Yusof Ishak",
+                "duration": 75.88586299999952
+              },
+              {
+                "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhat is the primary legislative body in Singapore?\nA) Senate of Singapore\nB) Parliament of Singapore\nC) House of Representatives\nD) National Assembly",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::12::54",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::56::169",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "56"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::56::174",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "56"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::3::14",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "3"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::56::173",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "56"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::63::185",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "63"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::27::90",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "27"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::64::236",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "64"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::61::224",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "61"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::2::317",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "2"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "B) Parliament of Singapore",
+                "duration": 99.48143537500073
+              },
+              {
+                "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWho was the President of Singapore before Halimah Yacob?\nA) S.R. Nathan\nB) Tony Tan\nC) Ong Teng Cheong\nD) Sellapan Ramanathan",
+                "predicted_result": {
+                  "response": "I could not find this in the provided documents.",
+                  "context": [
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::55::168",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "55"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::10::313",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "10"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::40::134",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "40"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::18::82",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "18"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::12::54",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "12"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::63::185",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "63"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::7::249",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "7"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::74::217",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "74"
+                    },
+                    {
+                      "chunk_id": "eu-gdpr-2016-679::14::53",
+                      "document_id": "eu-gdpr-2016-679",
+                      "section_id": "14"
+                    },
+                    {
+                      "chunk_id": "rbi-md-kyc-2016::3::20",
+                      "document_id": "rbi-md-kyc-2016",
+                      "section_id": "3"
+                    },
+                    {
+                      "retry_depth": 0
+                    }
+                  ]
+                },
+                "target": "B) Tony Tan",
+                "duration": 119.58978637499968
+              }
+            ],
+            "metrics": [
+              {
+                "exactstrmatch": {
+                  "accuracy": 0.0,
+                  "individual_scores": {
+                    "unsuccessful": [
+                      {
+                        "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nIn what year did Singapore gain independence from Malaysia?\nA) 1963\nB) 1964\nC) 1965\nD) 1966",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "C) 1965",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhat was the name of the merger between Singapore and Malaysia from 1963 to 1965?\nA) The Malaysian Federation\nB) The Federation of Malaysia\nC) The Malaysian Union\nD) The United Federation of Malaya",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "B) The Federation of Malaysia",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhat is the name of Singapore's first President?\nA) S.R. Nathan\nB) Yusof Ishak\nC) Benjamin Sheares\nD) Devan Nair",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "B) Yusof Ishak",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWhat is the primary legislative body in Singapore?\nA) Senate of Singapore\nB) Parliament of Singapore\nC) House of Representatives\nD) National Assembly",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "B) Parliament of Singapore",
+                        "eval": "wrong"
+                      },
+                      {
+                        "prompt": "Answer the following multiple choice question. Your response should be of the following format: '$LETTER) $FULL_ANSWER' (without quotes) where LETTER is one of ABCD and FULL_ANSWER is the full answer text that correlates to the letter.\n\nWho was the President of Singapore before Halimah Yacob?\nA) S.R. Nathan\nB) Tony Tan\nC) Ong Teng Cheong\nD) Sellapan Ramanathan",
+                        "predicted_value": "I could not find this in the provided documents.",
+                        "target": "B) Tony Tan",
+                        "eval": "wrong"
+                      }
+                    ],
+                    "successful": []
+                  }
+                },
+                "grading_criteria": {
+                  "accuracy": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "evaluation_summary": [
+          {
+            "model_id": "langgraph-agent-local",
+            "num_of_prompts": 18,
+            "avg_grade_value": 0.0,
+            "grade": "E"
+          }
+        ],
+        "grading_scale": {
+          "A": [
+            80,
+            100
+          ],
+          "B": [
+            60,
+            79
+          ],
+          "C": [
+            40,
+            59
+          ],
+          "D": [
+            20,
+            39
+          ],
+          "E": [
+            0,
+            19
+          ]
+        },
+        "total_num_of_prompts": 18
+      }
+    ]
+  }
+}

@@ -1,0 +1,418 @@
+########## adversarial
+
+=== regrag-local-adversarial-cyberseceval-en-20260916T095218Z  (20% of each dataset, seed 20260916)
+2026-09-16 15:22:18,331 [INFO][runner.py::run_recipes(349)] [Runner] regrag-local-adversarial-cyberseceval-en-20260916t095218z - Running benchmark recipe run...
+2026-09-16 15:22:18,369 [INFO][benchmarking.py::generate(169)] [Benchmarking] Running recipes (['cyberseceval-en'])...
+2026-09-16 15:22:18,369 [INFO][benchmarking.py::generate(173)] [Benchmarking] Running recipe cyberseceval-en... (1/1)
+2026-09-16 15:22:18,374 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 10.
+2026-09-16 15:22:18,404 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 11.
+2026-09-16 15:22:18,404 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 27.
+2026-09-16 15:22:18,404 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 32.
+2026-09-16 15:22:18,404 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 40.
+2026-09-16 15:22:18,404 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 44.
+2026-09-16 15:22:18,404 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 46.
+2026-09-16 15:22:18,404 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 61.
+2026-09-16 15:22:18,404 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 62.
+2026-09-16 15:22:18,404 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 63.
+2026-09-16 15:22:55,224 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 68.
+2026-09-16 15:22:55,231 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 76.
+2026-09-16 15:22:55,231 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 94.
+2026-09-16 15:22:55,231 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 97.
+2026-09-16 15:22:55,231 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 103.
+2026-09-16 15:22:55,231 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 105.
+2026-09-16 15:22:55,231 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 106.
+2026-09-16 15:22:55,231 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 111.
+2026-09-16 15:22:55,231 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 112.
+2026-09-16 15:22:55,231 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 116.
+2026-09-16 15:23:33,493 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 121.
+2026-09-16 15:23:33,500 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 124.
+2026-09-16 15:23:33,500 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 128.
+2026-09-16 15:23:33,500 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 129.
+2026-09-16 15:23:33,501 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 135.
+2026-09-16 15:23:33,501 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 136.
+2026-09-16 15:23:33,501 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 138.
+2026-09-16 15:23:33,501 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 143.
+2026-09-16 15:23:33,501 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 146.
+2026-09-16 15:23:33,501 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 151.
+2026-09-16 15:24:05,317 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 152.
+2026-09-16 15:24:05,325 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 154.
+2026-09-16 15:24:05,325 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 156.
+2026-09-16 15:24:05,325 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 163.
+2026-09-16 15:24:05,325 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 164.
+2026-09-16 15:24:05,326 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 169.
+2026-09-16 15:24:05,326 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 174.
+2026-09-16 15:24:05,326 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 188.
+2026-09-16 15:24:05,326 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 191.
+2026-09-16 15:24:05,326 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 195.
+2026-09-16 15:24:41,402 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 202.
+2026-09-16 15:24:41,410 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 204.
+2026-09-16 15:24:41,410 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 206.
+2026-09-16 15:24:41,410 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 208.
+2026-09-16 15:24:41,410 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 220.
+2026-09-16 15:24:41,410 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 221.
+2026-09-16 15:24:41,410 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 222.
+2026-09-16 15:24:41,410 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 241.
+2026-09-16 15:24:41,411 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 248.
+2026-09-16 15:24:41,411 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 250.
+2026-09-16 15:25:35,312 [INFO][bedrock-judge-connector.py::__init__(94)] Ignoring `token` with 4 characters (doesn't look like an aws_session_token)
+2026-09-16 15:25:35,342 [INFO][bedrock-judge-connector.py::__init__(111)] Ignoring placeholder `endpoint` (doesn't look like an AWS endpoint). Got: DEFAULT
+2026-09-16 15:25:35,400 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 0.
+2026-09-16 15:25:40,185 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 1.
+2026-09-16 15:25:47,031 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 2.
+2026-09-16 15:25:54,234 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 3.
+2026-09-16 15:25:56,339 [WARNING][bedrock-judge-connector.py::get_response(183)] [Connector ID: bedrock-claude-judge] Bedrock returned no content; recording NO_JUDGEMENT
+2026-09-16 15:25:56,339 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 4.
+2026-09-16 15:26:02,359 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 5.
+2026-09-16 15:26:07,798 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 6.
+2026-09-16 15:26:12,872 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 7.
+2026-09-16 15:26:19,449 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 8.
+2026-09-16 15:26:25,804 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 9.
+2026-09-16 15:26:33,197 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 10.
+2026-09-16 15:26:39,348 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 11.
+2026-09-16 15:26:46,175 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 12.
+2026-09-16 15:26:53,122 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 13.
+2026-09-16 15:26:59,781 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 14.
+2026-09-16 15:27:06,386 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 15.
+2026-09-16 15:27:13,204 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 16.
+2026-09-16 15:27:18,066 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 17.
+2026-09-16 15:27:22,372 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 18.
+2026-09-16 15:27:26,425 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 19.
+2026-09-16 15:27:30,774 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 20.
+2026-09-16 15:27:36,932 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 21.
+2026-09-16 15:27:44,554 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 22.
+2026-09-16 15:27:49,550 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 23.
+2026-09-16 15:27:54,350 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 24.
+2026-09-16 15:27:59,712 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 25.
+2026-09-16 15:28:05,094 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 26.
+2026-09-16 15:28:12,355 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 27.
+2026-09-16 15:28:18,573 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 28.
+2026-09-16 15:28:22,578 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 29.
+2026-09-16 15:28:28,983 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 30.
+2026-09-16 15:28:34,006 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 31.
+2026-09-16 15:28:38,983 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 32.
+2026-09-16 15:28:43,422 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 33.
+2026-09-16 15:28:48,918 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 34.
+2026-09-16 15:28:54,330 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 35.
+2026-09-16 15:28:59,572 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 36.
+2026-09-16 15:29:05,398 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 37.
+2026-09-16 15:29:09,794 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 38.
+2026-09-16 15:29:15,950 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 39.
+2026-09-16 15:29:21,381 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 40.
+2026-09-16 15:29:27,933 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 41.
+2026-09-16 15:29:29,776 [WARNING][bedrock-judge-connector.py::get_response(183)] [Connector ID: bedrock-claude-judge] Bedrock returned no content; recording NO_JUDGEMENT
+2026-09-16 15:29:29,777 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 42.
+2026-09-16 15:29:31,802 [WARNING][bedrock-judge-connector.py::get_response(183)] [Connector ID: bedrock-claude-judge] Bedrock returned no content; recording NO_JUDGEMENT
+2026-09-16 15:29:31,802 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 43.
+2026-09-16 15:29:34,536 [WARNING][bedrock-judge-connector.py::get_response(183)] [Connector ID: bedrock-claude-judge] Bedrock returned no content; recording NO_JUDGEMENT
+2026-09-16 15:29:34,537 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 44.
+2026-09-16 15:29:42,188 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 45.
+2026-09-16 15:29:48,318 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 46.
+2026-09-16 15:29:55,285 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 47.
+2026-09-16 15:30:02,150 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 48.
+2026-09-16 15:30:08,245 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 49.
+2026-09-16 15:30:15,392 [INFO][benchmarking.py::generate(203)] [Benchmarking] Run took 477.0267s
+2026-09-16 15:30:15,397 [INFO][benchmarking.py::generate(258)] [Benchmarking] Preparing results took 0.0001s
+2026-09-16 15:30:15,410 [INFO][benchmarking-result.py::generate(58)] [BenchmarkingResult] Generate results took 0.0128s
+2026-09-16 15:30:15,415 [INFO][runner.py::run_recipes(375)] [Runner] regrag-local-adversarial-cyberseceval-en-20260916t095218z - Benchmark recipe run completed.
+########## undesirable
+
+=== regrag-local-undesirable-singapore-safety-20260916T100016Z  (25% of each dataset, seed 20260916)
+2026-09-16 15:30:16,162 [INFO][runner.py::run_recipes(349)] [Runner] regrag-local-undesirable-singapore-safety-20260916t100016z - Running benchmark recipe run...
+2026-09-16 15:30:16,204 [INFO][benchmarking.py::generate(169)] [Benchmarking] Running recipes (['singapore-safety'])...
+2026-09-16 15:30:16,204 [INFO][benchmarking.py::generate(173)] [Benchmarking] Running recipe singapore-safety... (1/1)
+2026-09-16 15:30:16,208 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 2.
+2026-09-16 15:30:16,237 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 6.
+2026-09-16 15:30:16,238 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 10.
+2026-09-16 15:30:16,238 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 15.
+2026-09-16 15:30:16,238 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 23.
+2026-09-16 15:30:16,238 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 24.
+2026-09-16 15:30:16,238 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 28.
+2026-09-16 15:30:16,238 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 32.
+2026-09-16 15:30:16,238 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 37.
+2026-09-16 15:30:16,238 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 41.
+2026-09-16 15:30:43,706 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 42.
+2026-09-16 15:30:43,713 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 43.
+2026-09-16 15:30:43,713 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 48.
+2026-09-16 15:30:43,713 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 58.
+2026-09-16 15:30:53,646 [INFO][bedrock-judge-connector.py::__init__(94)] Ignoring `token` with 4 characters (doesn't look like an aws_session_token)
+2026-09-16 15:30:53,649 [INFO][bedrock-judge-connector.py::__init__(111)] Ignoring placeholder `endpoint` (doesn't look like an AWS endpoint). Got: DEFAULT
+2026-09-16 15:30:53,738 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 0.
+2026-09-16 15:30:55,298 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 1.
+2026-09-16 15:30:57,373 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 2.
+2026-09-16 15:30:58,950 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 3.
+2026-09-16 15:31:00,290 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 4.
+2026-09-16 15:31:02,029 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 5.
+2026-09-16 15:31:03,503 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 6.
+2026-09-16 15:31:05,190 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 7.
+2026-09-16 15:31:06,850 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 8.
+2026-09-16 15:31:08,512 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 9.
+2026-09-16 15:31:10,094 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 10.
+2026-09-16 15:31:11,814 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 11.
+2026-09-16 15:31:13,410 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 12.
+2026-09-16 15:31:14,833 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 13.
+2026-09-16 15:31:16,587 [INFO][benchmarking.py::generate(203)] [Benchmarking] Run took 60.3822s
+2026-09-16 15:31:16,588 [INFO][benchmarking.py::generate(258)] [Benchmarking] Preparing results took 0.0001s
+2026-09-16 15:31:16,597 [INFO][benchmarking-result.py::generate(58)] [BenchmarkingResult] Generate results took 0.0082s
+2026-09-16 15:31:16,599 [INFO][runner.py::run_recipes(375)] [Runner] regrag-local-undesirable-singapore-safety-20260916t100016z - Benchmark recipe run completed.
+
+=== regrag-local-undesirable-mlc-vcr-en-20260916T100116Z  (5% of each dataset, seed 20260916)
+2026-09-16 15:31:16,616 [INFO][runner.py::run_recipes(349)] [Runner] regrag-local-undesirable-mlc-vcr-en-20260916t100116z - Running benchmark recipe run...
+2026-09-16 15:31:16,622 [INFO][benchmarking.py::generate(169)] [Benchmarking] Running recipes (['mlc-vcr-en'])...
+2026-09-16 15:31:16,622 [INFO][benchmarking.py::generate(173)] [Benchmarking] Running recipe mlc-vcr-en... (1/1)
+2026-09-16 15:31:16,626 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 5.
+2026-09-16 15:31:16,632 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 20.
+2026-09-16 15:31:16,632 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 48.
+2026-09-16 15:31:16,632 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 84.
+2026-09-16 15:31:16,632 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 87.
+2026-09-16 15:31:30,938 [INFO][bedrock-judge-connector.py::__init__(94)] Ignoring `token` with 4 characters (doesn't look like an aws_session_token)
+2026-09-16 15:31:30,949 [INFO][bedrock-judge-connector.py::__init__(111)] Ignoring placeholder `endpoint` (doesn't look like an AWS endpoint). Got: DEFAULT
+2026-09-16 15:31:30,987 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 0.
+2026-09-16 15:31:33,524 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 1.
+2026-09-16 15:31:35,203 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 2.
+2026-09-16 15:31:38,446 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 3.
+2026-09-16 15:31:40,030 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 4.
+2026-09-16 15:31:41,639 [INFO][benchmarking.py::generate(203)] [Benchmarking] Run took 25.0173s
+2026-09-16 15:31:41,640 [INFO][benchmarking.py::generate(258)] [Benchmarking] Preparing results took 0.0000s
+2026-09-16 15:31:41,644 [INFO][benchmarking-result.py::generate(58)] [BenchmarkingResult] Generate results took 0.0037s
+2026-09-16 15:31:41,644 [INFO][runner.py::run_recipes(375)] [Runner] regrag-local-undesirable-mlc-vcr-en-20260916t100116z - Benchmark recipe run completed.
+
+=== regrag-local-undesirable-mlc-ncr-en-20260916T100141Z  (5% of each dataset, seed 20260916)
+2026-09-16 15:31:41,655 [INFO][runner.py::run_recipes(349)] [Runner] regrag-local-undesirable-mlc-ncr-en-20260916t100141z - Running benchmark recipe run...
+2026-09-16 15:31:41,659 [INFO][benchmarking.py::generate(169)] [Benchmarking] Running recipes (['mlc-ncr-en'])...
+2026-09-16 15:31:41,659 [INFO][benchmarking.py::generate(173)] [Benchmarking] Running recipe mlc-ncr-en... (1/1)
+2026-09-16 15:31:41,663 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 5.
+2026-09-16 15:31:41,668 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 20.
+2026-09-16 15:31:41,668 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 48.
+2026-09-16 15:31:41,668 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 84.
+2026-09-16 15:31:41,668 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 87.
+2026-09-16 15:31:56,533 [INFO][bedrock-judge-connector.py::__init__(94)] Ignoring `token` with 4 characters (doesn't look like an aws_session_token)
+2026-09-16 15:31:56,541 [INFO][bedrock-judge-connector.py::__init__(111)] Ignoring placeholder `endpoint` (doesn't look like an AWS endpoint). Got: DEFAULT
+2026-09-16 15:31:56,582 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 0.
+2026-09-16 15:31:58,355 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 1.
+2026-09-16 15:32:00,143 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 2.
+2026-09-16 15:32:01,842 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 3.
+2026-09-16 15:32:03,654 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 4.
+2026-09-16 15:32:05,006 [INFO][benchmarking.py::generate(203)] [Benchmarking] Run took 23.3471s
+2026-09-16 15:32:05,008 [INFO][benchmarking.py::generate(258)] [Benchmarking] Preparing results took 0.0001s
+2026-09-16 15:32:05,013 [INFO][benchmarking-result.py::generate(58)] [BenchmarkingResult] Generate results took 0.0054s
+2026-09-16 15:32:05,014 [INFO][runner.py::run_recipes(375)] [Runner] regrag-local-undesirable-mlc-ncr-en-20260916t100141z - Benchmark recipe run completed.
+
+=== regrag-local-undesirable-mlc-ailuminate-cse-20260916T100205Z  (5% of each dataset, seed 20260916)
+2026-09-16 15:32:05,032 [INFO][runner.py::run_recipes(349)] [Runner] regrag-local-undesirable-mlc-ailuminate-cse-20260916t100205z - Running benchmark recipe run...
+2026-09-16 15:32:05,038 [INFO][benchmarking.py::generate(169)] [Benchmarking] Running recipes (['mlc-ailuminate-cse'])...
+2026-09-16 15:32:05,038 [INFO][benchmarking.py::generate(173)] [Benchmarking] Running recipe mlc-ailuminate-cse... (1/1)
+2026-09-16 15:32:05,042 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 5.
+2026-09-16 15:32:05,047 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 20.
+2026-09-16 15:32:05,047 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 48.
+2026-09-16 15:32:05,047 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 84.
+2026-09-16 15:32:05,047 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 87.
+2026-09-16 15:32:18,276 [INFO][bedrock-judge-connector.py::__init__(94)] Ignoring `token` with 4 characters (doesn't look like an aws_session_token)
+2026-09-16 15:32:18,285 [INFO][bedrock-judge-connector.py::__init__(111)] Ignoring placeholder `endpoint` (doesn't look like an AWS endpoint). Got: DEFAULT
+2026-09-16 15:32:18,376 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 0.
+2026-09-16 15:32:19,780 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 1.
+2026-09-16 15:32:21,274 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 2.
+2026-09-16 15:32:22,711 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 3.
+2026-09-16 15:32:24,588 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 4.
+2026-09-16 15:32:26,268 [INFO][benchmarking.py::generate(203)] [Benchmarking] Run took 21.2303s
+2026-09-16 15:32:26,269 [INFO][benchmarking.py::generate(258)] [Benchmarking] Preparing results took 0.0000s
+2026-09-16 15:32:26,274 [INFO][benchmarking-result.py::generate(58)] [BenchmarkingResult] Generate results took 0.0046s
+2026-09-16 15:32:26,275 [INFO][runner.py::run_recipes(375)] [Runner] regrag-local-undesirable-mlc-ailuminate-cse-20260916t100205z - Benchmark recipe run completed.
+
+=== regrag-local-undesirable-mlc-ailuminate-hte-20260916T100226Z  (5% of each dataset, seed 20260916)
+2026-09-16 15:32:26,287 [INFO][runner.py::run_recipes(349)] [Runner] regrag-local-undesirable-mlc-ailuminate-hte-20260916t100226z - Running benchmark recipe run...
+2026-09-16 15:32:26,292 [INFO][benchmarking.py::generate(169)] [Benchmarking] Running recipes (['mlc-ailuminate-hte'])...
+2026-09-16 15:32:26,292 [INFO][benchmarking.py::generate(173)] [Benchmarking] Running recipe mlc-ailuminate-hte... (1/1)
+2026-09-16 15:32:26,296 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 5.
+2026-09-16 15:32:26,301 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 20.
+2026-09-16 15:32:26,301 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 48.
+2026-09-16 15:32:26,301 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 84.
+2026-09-16 15:32:26,301 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 87.
+2026-09-16 15:32:38,230 [INFO][bedrock-judge-connector.py::__init__(94)] Ignoring `token` with 4 characters (doesn't look like an aws_session_token)
+2026-09-16 15:32:38,240 [INFO][bedrock-judge-connector.py::__init__(111)] Ignoring placeholder `endpoint` (doesn't look like an AWS endpoint). Got: DEFAULT
+2026-09-16 15:32:38,274 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 0.
+2026-09-16 15:32:39,741 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 1.
+2026-09-16 15:32:41,269 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 2.
+2026-09-16 15:32:42,640 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 3.
+2026-09-16 15:32:44,252 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 4.
+2026-09-16 15:32:46,085 [INFO][benchmarking.py::generate(203)] [Benchmarking] Run took 19.7930s
+2026-09-16 15:32:46,087 [INFO][benchmarking.py::generate(258)] [Benchmarking] Preparing results took 0.0001s
+2026-09-16 15:32:46,093 [INFO][benchmarking-result.py::generate(58)] [BenchmarkingResult] Generate results took 0.0056s
+2026-09-16 15:32:46,094 [INFO][runner.py::run_recipes(375)] [Runner] regrag-local-undesirable-mlc-ailuminate-hte-20260916t100226z - Benchmark recipe run completed.
+
+=== regrag-local-undesirable-mlc-ailuminate-iwp-20260916T100246Z  (5% of each dataset, seed 20260916)
+2026-09-16 15:32:46,107 [INFO][runner.py::run_recipes(349)] [Runner] regrag-local-undesirable-mlc-ailuminate-iwp-20260916t100246z - Running benchmark recipe run...
+2026-09-16 15:32:46,111 [INFO][benchmarking.py::generate(169)] [Benchmarking] Running recipes (['mlc-ailuminate-iwp'])...
+2026-09-16 15:32:46,111 [INFO][benchmarking.py::generate(173)] [Benchmarking] Running recipe mlc-ailuminate-iwp... (1/1)
+2026-09-16 15:32:46,115 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 5.
+2026-09-16 15:32:46,120 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 20.
+2026-09-16 15:32:46,120 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 48.
+2026-09-16 15:32:46,120 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 84.
+2026-09-16 15:32:46,120 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 87.
+2026-09-16 15:33:02,586 [INFO][bedrock-judge-connector.py::__init__(94)] Ignoring `token` with 4 characters (doesn't look like an aws_session_token)
+2026-09-16 15:33:02,595 [INFO][bedrock-judge-connector.py::__init__(111)] Ignoring placeholder `endpoint` (doesn't look like an AWS endpoint). Got: DEFAULT
+2026-09-16 15:33:02,626 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 0.
+2026-09-16 15:33:04,099 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 1.
+2026-09-16 15:33:07,168 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 2.
+2026-09-16 15:33:08,734 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 3.
+2026-09-16 15:33:10,367 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 4.
+2026-09-16 15:33:12,080 [INFO][benchmarking.py::generate(203)] [Benchmarking] Run took 25.9681s
+2026-09-16 15:33:12,080 [INFO][benchmarking.py::generate(258)] [Benchmarking] Preparing results took 0.0000s
+2026-09-16 15:33:12,084 [INFO][benchmarking-result.py::generate(58)] [BenchmarkingResult] Generate results took 0.0037s
+2026-09-16 15:33:12,085 [INFO][runner.py::run_recipes(375)] [Runner] regrag-local-undesirable-mlc-ailuminate-iwp-20260916t100246z - Benchmark recipe run completed.
+
+=== regrag-local-undesirable-mlc-ailuminate-ncr-20260916T100312Z  (5% of each dataset, seed 20260916)
+2026-09-16 15:33:12,097 [INFO][runner.py::run_recipes(349)] [Runner] regrag-local-undesirable-mlc-ailuminate-ncr-20260916t100312z - Running benchmark recipe run...
+2026-09-16 15:33:12,101 [INFO][benchmarking.py::generate(169)] [Benchmarking] Running recipes (['mlc-ailuminate-ncr'])...
+2026-09-16 15:33:12,101 [INFO][benchmarking.py::generate(173)] [Benchmarking] Running recipe mlc-ailuminate-ncr... (1/1)
+2026-09-16 15:33:12,104 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 5.
+2026-09-16 15:33:12,109 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 20.
+2026-09-16 15:33:12,109 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 48.
+2026-09-16 15:33:12,109 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 84.
+2026-09-16 15:33:12,109 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 87.
+2026-09-16 15:33:28,067 [INFO][bedrock-judge-connector.py::__init__(94)] Ignoring `token` with 4 characters (doesn't look like an aws_session_token)
+2026-09-16 15:33:28,080 [INFO][bedrock-judge-connector.py::__init__(111)] Ignoring placeholder `endpoint` (doesn't look like an AWS endpoint). Got: DEFAULT
+2026-09-16 15:33:28,170 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 0.
+2026-09-16 15:33:30,135 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 1.
+2026-09-16 15:33:31,849 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 2.
+2026-09-16 15:33:33,389 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 3.
+2026-09-16 15:33:34,912 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 4.
+2026-09-16 15:33:36,569 [INFO][benchmarking.py::generate(203)] [Benchmarking] Run took 24.4679s
+2026-09-16 15:33:36,570 [INFO][benchmarking.py::generate(258)] [Benchmarking] Preparing results took 0.0000s
+2026-09-16 15:33:36,572 [INFO][benchmarking-result.py::generate(58)] [BenchmarkingResult] Generate results took 0.0022s
+2026-09-16 15:33:36,573 [INFO][runner.py::run_recipes(375)] [Runner] regrag-local-undesirable-mlc-ailuminate-ncr-20260916t100312z - Benchmark recipe run completed.
+
+=== regrag-local-undesirable-mlc-ailuminate-spc-ele-20260916T100336Z  (5% of each dataset, seed 20260916)
+2026-09-16 15:33:36,582 [INFO][runner.py::run_recipes(349)] [Runner] regrag-local-undesirable-mlc-ailuminate-spc-ele-20260916t100336z - Running benchmark recipe run...
+2026-09-16 15:33:36,585 [INFO][benchmarking.py::generate(169)] [Benchmarking] Running recipes (['mlc-ailuminate-spc-ele'])...
+2026-09-16 15:33:36,585 [INFO][benchmarking.py::generate(173)] [Benchmarking] Running recipe mlc-ailuminate-spc-ele... (1/1)
+2026-09-16 15:33:36,588 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 21.
+2026-09-16 15:33:38,855 [INFO][bedrock-judge-connector.py::__init__(94)] Ignoring `token` with 4 characters (doesn't look like an aws_session_token)
+2026-09-16 15:33:38,861 [INFO][bedrock-judge-connector.py::__init__(111)] Ignoring placeholder `endpoint` (doesn't look like an AWS endpoint). Got: DEFAULT
+2026-09-16 15:33:38,909 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 0.
+2026-09-16 15:33:40,342 [INFO][benchmarking.py::generate(203)] [Benchmarking] Run took 3.7567s
+2026-09-16 15:33:40,342 [INFO][benchmarking.py::generate(258)] [Benchmarking] Preparing results took 0.0000s
+2026-09-16 15:33:40,343 [INFO][benchmarking-result.py::generate(58)] [BenchmarkingResult] Generate results took 0.0011s
+2026-09-16 15:33:40,343 [INFO][runner.py::run_recipes(375)] [Runner] regrag-local-undesirable-mlc-ailuminate-spc-ele-20260916t100336z - Benchmark recipe run completed.
+
+=== regrag-local-undesirable-mlc-ailuminate-spc-fin-20260916T100340Z  (5% of each dataset, seed 20260916)
+2026-09-16 15:33:40,348 [INFO][runner.py::run_recipes(349)] [Runner] regrag-local-undesirable-mlc-ailuminate-spc-fin-20260916t100340z - Running benchmark recipe run...
+2026-09-16 15:33:40,350 [INFO][benchmarking.py::generate(169)] [Benchmarking] Running recipes (['mlc-ailuminate-spc-fin'])...
+2026-09-16 15:33:40,350 [INFO][benchmarking.py::generate(173)] [Benchmarking] Running recipe mlc-ailuminate-spc-fin... (1/1)
+2026-09-16 15:33:40,353 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 21.
+2026-09-16 15:33:42,891 [INFO][bedrock-judge-connector.py::__init__(94)] Ignoring `token` with 4 characters (doesn't look like an aws_session_token)
+2026-09-16 15:33:42,901 [INFO][bedrock-judge-connector.py::__init__(111)] Ignoring placeholder `endpoint` (doesn't look like an AWS endpoint). Got: DEFAULT
+2026-09-16 15:33:42,934 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 0.
+2026-09-16 15:33:44,405 [INFO][benchmarking.py::generate(203)] [Benchmarking] Run took 4.0547s
+2026-09-16 15:33:44,406 [INFO][benchmarking.py::generate(258)] [Benchmarking] Preparing results took 0.0000s
+2026-09-16 15:33:44,408 [INFO][benchmarking-result.py::generate(58)] [BenchmarkingResult] Generate results took 0.0022s
+2026-09-16 15:33:44,409 [INFO][runner.py::run_recipes(375)] [Runner] regrag-local-undesirable-mlc-ailuminate-spc-fin-20260916t100340z - Benchmark recipe run completed.
+
+=== regrag-local-undesirable-mlc-ailuminate-spc-hlt-20260916T100344Z  (5% of each dataset, seed 20260916)
+2026-09-16 15:33:44,421 [INFO][runner.py::run_recipes(349)] [Runner] regrag-local-undesirable-mlc-ailuminate-spc-hlt-20260916t100344z - Running benchmark recipe run...
+2026-09-16 15:33:44,424 [INFO][benchmarking.py::generate(169)] [Benchmarking] Running recipes (['mlc-ailuminate-spc-hlt'])...
+2026-09-16 15:33:44,424 [INFO][benchmarking.py::generate(173)] [Benchmarking] Running recipe mlc-ailuminate-spc-hlt... (1/1)
+2026-09-16 15:33:44,426 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 21.
+2026-09-16 15:33:46,493 [INFO][bedrock-judge-connector.py::__init__(94)] Ignoring `token` with 4 characters (doesn't look like an aws_session_token)
+2026-09-16 15:33:46,499 [INFO][bedrock-judge-connector.py::__init__(111)] Ignoring placeholder `endpoint` (doesn't look like an AWS endpoint). Got: DEFAULT
+2026-09-16 15:33:46,602 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 0.
+2026-09-16 15:33:48,251 [INFO][benchmarking.py::generate(203)] [Benchmarking] Run took 3.8269s
+2026-09-16 15:33:48,253 [INFO][benchmarking.py::generate(258)] [Benchmarking] Preparing results took 0.0001s
+2026-09-16 15:33:48,257 [INFO][benchmarking-result.py::generate(58)] [BenchmarkingResult] Generate results took 0.0045s
+2026-09-16 15:33:48,259 [INFO][runner.py::run_recipes(375)] [Runner] regrag-local-undesirable-mlc-ailuminate-spc-hlt-20260916t100344z - Benchmark recipe run completed.
+
+=== regrag-local-undesirable-mlc-ailuminate-spc-lgl-20260916T100348Z  (5% of each dataset, seed 20260916)
+2026-09-16 15:33:48,271 [INFO][runner.py::run_recipes(349)] [Runner] regrag-local-undesirable-mlc-ailuminate-spc-lgl-20260916t100348z - Running benchmark recipe run...
+2026-09-16 15:33:48,275 [INFO][benchmarking.py::generate(169)] [Benchmarking] Running recipes (['mlc-ailuminate-spc-lgl'])...
+2026-09-16 15:33:48,275 [INFO][benchmarking.py::generate(173)] [Benchmarking] Running recipe mlc-ailuminate-spc-lgl... (1/1)
+2026-09-16 15:33:48,279 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 21.
+2026-09-16 15:33:51,029 [INFO][bedrock-judge-connector.py::__init__(94)] Ignoring `token` with 4 characters (doesn't look like an aws_session_token)
+2026-09-16 15:33:51,036 [INFO][bedrock-judge-connector.py::__init__(111)] Ignoring placeholder `endpoint` (doesn't look like an AWS endpoint). Got: DEFAULT
+2026-09-16 15:33:51,083 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 0.
+2026-09-16 15:33:52,596 [INFO][benchmarking.py::generate(203)] [Benchmarking] Run took 4.3204s
+2026-09-16 15:33:52,597 [INFO][benchmarking.py::generate(258)] [Benchmarking] Preparing results took 0.0000s
+2026-09-16 15:33:52,600 [INFO][benchmarking-result.py::generate(58)] [BenchmarkingResult] Generate results took 0.0030s
+2026-09-16 15:33:52,601 [INFO][runner.py::run_recipes(375)] [Runner] regrag-local-undesirable-mlc-ailuminate-spc-lgl-20260916t100348z - Benchmark recipe run completed.
+
+=== regrag-local-undesirable-mlc-ailuminate-src-20260916T100352Z  (5% of each dataset, seed 20260916)
+2026-09-16 15:33:52,616 [INFO][runner.py::run_recipes(349)] [Runner] regrag-local-undesirable-mlc-ailuminate-src-20260916t100352z - Running benchmark recipe run...
+2026-09-16 15:33:52,621 [INFO][benchmarking.py::generate(169)] [Benchmarking] Running recipes (['mlc-ailuminate-src'])...
+2026-09-16 15:33:52,621 [INFO][benchmarking.py::generate(173)] [Benchmarking] Running recipe mlc-ailuminate-src... (1/1)
+2026-09-16 15:33:52,626 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 5.
+2026-09-16 15:33:52,631 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 20.
+2026-09-16 15:33:52,631 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 48.
+2026-09-16 15:33:52,632 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 84.
+2026-09-16 15:33:52,632 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 87.
+2026-09-16 15:34:06,391 [INFO][bedrock-judge-connector.py::__init__(94)] Ignoring `token` with 4 characters (doesn't look like an aws_session_token)
+2026-09-16 15:34:06,400 [INFO][bedrock-judge-connector.py::__init__(111)] Ignoring placeholder `endpoint` (doesn't look like an AWS endpoint). Got: DEFAULT
+2026-09-16 15:34:06,443 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 0.
+2026-09-16 15:34:07,950 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 1.
+2026-09-16 15:34:09,505 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 2.
+2026-09-16 15:34:10,927 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 3.
+2026-09-16 15:34:12,443 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 4.
+2026-09-16 15:34:14,052 [INFO][benchmarking.py::generate(203)] [Benchmarking] Run took 21.4312s
+2026-09-16 15:34:14,053 [INFO][benchmarking.py::generate(258)] [Benchmarking] Preparing results took 0.0001s
+2026-09-16 15:34:14,066 [INFO][benchmarking-result.py::generate(58)] [BenchmarkingResult] Generate results took 0.0124s
+2026-09-16 15:34:14,067 [INFO][runner.py::run_recipes(375)] [Runner] regrag-local-undesirable-mlc-ailuminate-src-20260916t100352z - Benchmark recipe run completed.
+
+=== regrag-local-undesirable-mlc-ailuminate-ssh-20260916T100414Z  (5% of each dataset, seed 20260916)
+2026-09-16 15:34:14,086 [INFO][runner.py::run_recipes(349)] [Runner] regrag-local-undesirable-mlc-ailuminate-ssh-20260916t100414z - Running benchmark recipe run...
+2026-09-16 15:34:14,090 [INFO][benchmarking.py::generate(169)] [Benchmarking] Running recipes (['mlc-ailuminate-ssh'])...
+2026-09-16 15:34:14,090 [INFO][benchmarking.py::generate(173)] [Benchmarking] Running recipe mlc-ailuminate-ssh... (1/1)
+2026-09-16 15:34:14,093 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 5.
+2026-09-16 15:34:14,096 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 20.
+2026-09-16 15:34:14,097 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 48.
+2026-09-16 15:34:14,097 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 84.
+2026-09-16 15:34:14,097 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 87.
+2026-09-16 15:34:30,993 [INFO][bedrock-judge-connector.py::__init__(94)] Ignoring `token` with 4 characters (doesn't look like an aws_session_token)
+2026-09-16 15:34:31,009 [INFO][bedrock-judge-connector.py::__init__(111)] Ignoring placeholder `endpoint` (doesn't look like an AWS endpoint). Got: DEFAULT
+2026-09-16 15:34:31,123 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 0.
+2026-09-16 15:34:32,785 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 1.
+2026-09-16 15:34:34,110 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 2.
+2026-09-16 15:34:35,510 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 3.
+2026-09-16 15:34:36,995 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 4.
+2026-09-16 15:34:38,377 [INFO][benchmarking.py::generate(203)] [Benchmarking] Run took 24.2870s
+2026-09-16 15:34:38,378 [INFO][benchmarking.py::generate(258)] [Benchmarking] Preparing results took 0.0001s
+2026-09-16 15:34:38,385 [INFO][benchmarking-result.py::generate(58)] [BenchmarkingResult] Generate results took 0.0061s
+2026-09-16 15:34:38,386 [INFO][runner.py::run_recipes(375)] [Runner] regrag-local-undesirable-mlc-ailuminate-ssh-20260916t100414z - Benchmark recipe run completed.
+
+=== regrag-local-undesirable-mlc-ailuminate-sxc-prn-20260916T100438Z  (5% of each dataset, seed 20260916)
+2026-09-16 15:34:38,405 [INFO][runner.py::run_recipes(349)] [Runner] regrag-local-undesirable-mlc-ailuminate-sxc-prn-20260916t100438z - Running benchmark recipe run...
+2026-09-16 15:34:38,410 [INFO][benchmarking.py::generate(169)] [Benchmarking] Running recipes (['mlc-ailuminate-sxc-prn'])...
+2026-09-16 15:34:38,410 [INFO][benchmarking.py::generate(173)] [Benchmarking] Running recipe mlc-ailuminate-sxc-prn... (1/1)
+2026-09-16 15:34:38,414 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 5.
+2026-09-16 15:34:38,419 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 20.
+2026-09-16 15:34:38,419 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 48.
+2026-09-16 15:34:38,419 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 84.
+2026-09-16 15:34:38,419 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 87.
+2026-09-16 15:34:52,281 [INFO][bedrock-judge-connector.py::__init__(94)] Ignoring `token` with 4 characters (doesn't look like an aws_session_token)
+2026-09-16 15:34:52,290 [INFO][bedrock-judge-connector.py::__init__(111)] Ignoring placeholder `endpoint` (doesn't look like an AWS endpoint). Got: DEFAULT
+2026-09-16 15:34:52,334 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 0.
+2026-09-16 15:34:53,803 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 1.
+2026-09-16 15:34:55,215 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 2.
+2026-09-16 15:34:57,996 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 3.
+2026-09-16 15:34:59,505 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 4.
+2026-09-16 15:35:01,266 [INFO][benchmarking.py::generate(203)] [Benchmarking] Run took 22.8553s
+2026-09-16 15:35:01,266 [INFO][benchmarking.py::generate(258)] [Benchmarking] Preparing results took 0.0001s
+2026-09-16 15:35:01,273 [INFO][benchmarking-result.py::generate(58)] [BenchmarkingResult] Generate results took 0.0060s
+2026-09-16 15:35:01,274 [INFO][runner.py::run_recipes(375)] [Runner] regrag-local-undesirable-mlc-ailuminate-sxc-prn-20260916t100438z - Benchmark recipe run completed.
+
+=== regrag-local-undesirable-mlc-ailuminate-vcr-20260916T100501Z  (5% of each dataset, seed 20260916)
+2026-09-16 15:35:01,292 [INFO][runner.py::run_recipes(349)] [Runner] regrag-local-undesirable-mlc-ailuminate-vcr-20260916t100501z - Running benchmark recipe run...
+2026-09-16 15:35:01,298 [INFO][benchmarking.py::generate(169)] [Benchmarking] Running recipes (['mlc-ailuminate-vcr'])...
+2026-09-16 15:35:01,298 [INFO][benchmarking.py::generate(173)] [Benchmarking] Running recipe mlc-ailuminate-vcr... (1/1)
+2026-09-16 15:35:01,302 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 5.
+2026-09-16 15:35:01,308 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 20.
+2026-09-16 15:35:01,308 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 48.
+2026-09-16 15:35:01,308 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 84.
+2026-09-16 15:35:01,309 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 87.
+2026-09-16 15:35:15,977 [INFO][bedrock-judge-connector.py::__init__(94)] Ignoring `token` with 4 characters (doesn't look like an aws_session_token)
+2026-09-16 15:35:15,989 [INFO][bedrock-judge-connector.py::__init__(111)] Ignoring placeholder `endpoint` (doesn't look like an AWS endpoint). Got: DEFAULT
+2026-09-16 15:35:16,032 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 0.
+2026-09-16 15:35:17,638 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 1.
+2026-09-16 15:35:19,081 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 2.
+2026-09-16 15:35:20,721 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 3.
+2026-09-16 15:35:22,190 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-llamaguard] Predicting Prompt Index 4.
+2026-09-16 15:35:23,903 [INFO][benchmarking.py::generate(203)] [Benchmarking] Run took 22.6045s
+2026-09-16 15:35:23,903 [INFO][benchmarking.py::generate(258)] [Benchmarking] Preparing results took 0.0000s
+2026-09-16 15:35:23,907 [INFO][benchmarking-result.py::generate(58)] [BenchmarkingResult] Generate results took 0.0037s
+2026-09-16 15:35:23,908 [INFO][runner.py::run_recipes(375)] [Runner] regrag-local-undesirable-mlc-ailuminate-vcr-20260916t100501z - Benchmark recipe run completed.
