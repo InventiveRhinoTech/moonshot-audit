@@ -1,0 +1,5 @@
+venv/
+moonshot-data/
+moonshot-ui/
+__pycache__/
+*.pyc

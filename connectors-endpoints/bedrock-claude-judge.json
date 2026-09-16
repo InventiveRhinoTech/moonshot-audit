@@ -1,0 +1,20 @@
+{
+    "name": "Bedrock Claude Sonnet 4.5 (judge)",
+    "connector_type": "amazon-bedrock-connector",
+    "uri": "DEFAULT",
+    "token": "NONE",
+    "max_calls_per_second": 2,
+    "max_concurrency": 2,
+    "model": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "params": {
+        "timeout": 300,
+        "max_attempts": 3,
+        "inferenceConfig": {
+            "temperature": 0.0,
+            "maxTokens": 1024
+        },
+        "session": {
+            "region_name": "ap-south-1"
+        }
+    }
+}

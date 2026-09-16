@@ -1,0 +1,21 @@
+# Compose override used only for the Starter Kit audit run.
+#
+# RegRAG rate-limits `POST /v1/query` to 20/minute (AD-35) as a cost guard
+# against exactly this — an unattended script in a loop. Moonshot's
+# `max_calls_per_second` is an int, so the slowest it can go is 60/minute, and
+# leaving the guard at 20 turns a benchmark run into a run of 429s scored as
+# model output.
+#
+# The limiter has no effect on retrieval, generation or the refusal gate, so
+# raising it changes the run's cost, not its answers. It is raised here rather
+# than in the RegRAG repo so the audited system's own configuration is
+# untouched, and it is disclosed in section 2 of the report.
+#
+#   docker compose \
+#     -f ~/DevProjects/RegRAG/infra/docker/docker-compose.yml \
+#     -f ~/DevProjects/moonshot-audit/infra/regrag-audit-override.yml \
+#     --profile app up -d api
+services:
+  api:
+    environment:
+      - REGRAG_RATELIMIT_REQUESTS_PER_MINUTE=600

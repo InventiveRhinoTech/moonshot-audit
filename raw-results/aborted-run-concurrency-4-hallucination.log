@@ -1,0 +1,27 @@
+
+=== regrag-local-hallucination-singapore-facts-tf-20260916T085708Z  (100% of each dataset, seed 20260916)
+2026-09-16 14:27:08,132 [INFO][runner.py::run_recipes(349)] [Runner] regrag-local-hallucination-singapore-facts-tf-20260916t085708z - Running benchmark recipe run...
+2026-09-16 14:27:08,168 [INFO][benchmarking.py::generate(169)] [Benchmarking] Running recipes (['singapore-facts-tf'])...
+2026-09-16 14:27:08,168 [INFO][benchmarking.py::generate(173)] [Benchmarking] Running recipe singapore-facts-tf... (1/1)
+2026-09-16 14:27:08,174 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 0.
+2026-09-16 14:27:08,202 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+2026-09-16 14:27:08,205 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 2.
+2026-09-16 14:27:08,205 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 3.
+2026-09-16 14:27:08,205 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 4.
+2026-09-16 14:27:08,205 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 5.
+2026-09-16 14:27:08,205 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 6.
+2026-09-16 14:27:08,206 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 7.
+2026-09-16 14:27:08,206 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 8.
+2026-09-16 14:27:08,206 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 9.
+2026-09-16 14:27:08,579 [ERROR][connector.py::perform_retry_callback(45)] [Connector ID: regrag-local] Attempt 1 failed due to error: Server error '500 Internal Server Error' for url 'http://localhost:8000/v1/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2026-09-16 14:27:36,590 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 10.
+2026-09-16 14:27:36,599 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 11.
+2026-09-16 14:27:36,606 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 12.
+2026-09-16 14:27:36,606 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 13.
+2026-09-16 14:27:36,606 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 14.
+2026-09-16 14:27:36,606 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 15.
+2026-09-16 14:27:36,606 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 16.
+2026-09-16 14:27:36,606 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 17.
+2026-09-16 14:27:36,606 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 18.
+2026-09-16 14:27:36,606 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 19.

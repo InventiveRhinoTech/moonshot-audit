@@ -1,0 +1,50 @@
+RegRAG reranker concurrency defect — observation and reproduction attempt
+========================================================================
+2026-09-16, RegRAG at localhost:8000 (see report section 1 for commit).
+
+OBSERVED, ONCE
+--------------
+First Starter Kit Hallucination run, connector configured max_concurrency: 4.
+1 of the first 20 predictions returned HTTP 500. Container traceback:
+
+  File "/srv/app/api/v1/query.py", line 82, in post_query
+    outcome = answer_question(
+  File "/srv/app/rag/pipeline.py", line 99, in answer_question
+    found = search(
+  File "/srv/app/rag/search.py", line 122, in search
+    reranked = rerank(
+  File "/srv/app/rag/rerank.py", line 97, in rerank
+    scores = reranker.score(query, [c.text for c in candidates])
+  File "/srv/app/rag/rerank.py", line 180, in score
+    tokenizer.enable_truncation(max_length=MAX_PAIR_TOKENS)
+  RuntimeError: Already borrowed
+
+Run log: aborted-run-concurrency-4-hallucination.log
+
+MECHANISM (read from the code, not inferred from the rate)
+----------------------------------------------------------
+app/rag/rerank.py `_load()` caches one tokenizers.Tokenizer per process.
+`post_query` is a sync def, so FastAPI runs it in a threadpool. Two concurrent
+queries reach score() on different threads and share that one Rust object.
+enable_truncation() takes a mutable borrow; encode_batch() holds an immutable
+one. Overlap raises. This is a real data race, guarded at runtime by Rust.
+
+REPRODUCTION ATTEMPT — DID NOT REPRODUCE
+-----------------------------------------
+Varied in-corpus questions, warm process:
+  concurrency=1 requests=18 -> HTTP 200: 18
+  concurrency=2 requests=18 -> HTTP 200: 18
+  concurrency=4 requests=18 -> HTTP 200: 18
+  concurrency=6 requests=18 -> HTTP 200: 18
+Cold process (burst fired the instant /readyz returned 200):
+  concurrency=4 requests=12 -> HTTP 200: 12
+
+So: the defect is real and its mechanism is not in doubt, but it is timing
+dependent and we could not make it fire on demand. Reported as observed once
+in 20, not as a rate.
+
+SECOND FINDING, ABOUT THE INSTRUMENT
+-------------------------------------
+Moonshot's @perform_retry retried the failed call and it succeeded. Had the
+container log not been read, this 500 would not have appeared in any score.
+A benchmark that retries reports availability it did not measure.
