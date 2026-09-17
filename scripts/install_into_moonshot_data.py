@@ -53,6 +53,17 @@ LLAMA_GUARD_ENDPOINT = "bedrock-claude-llamaguard"
 CYBERSECEVAL_METRIC = "cybersecevalannotator2"
 CYBERSECEVAL_ENDPOINT = "bedrock-claude-cyberseceval"
 
+# Two of the fifteen attack modules drive an *attacker* LLM rather than
+# perturbing the prompt locally, and both are configured for `openai-gpt4`.
+# Same substitution as the judges, and it matters more here: this model writes
+# the attacks, so its willingness to play a hostile persona bounds how hard the
+# red teaming actually pushes. The report says which model wrote the attacks.
+ATTACKER_REPOINT = {
+    "malicious_question_generator": "openai-gpt4",
+    "violent_durian": "openai-gpt4",
+}
+ATTACKER_ENDPOINT = "bedrock-claude-attacker"
+
 
 def main() -> int:
     if not DATA.is_dir():
@@ -84,6 +95,18 @@ def main() -> int:
         config[CYBERSECEVAL_METRIC]["endpoints"] = [CYBERSECEVAL_ENDPOINT]
         print(f"repointed {CYBERSECEVAL_METRIC}: openai-gpt4o -> {CYBERSECEVAL_ENDPOINT}")
     config_path.write_text(json.dumps(config, indent=4) + "\n")
+
+    attack_config_path = DATA / "attack-modules" / "attack_modules_config.json"
+    attack_pristine = attack_config_path.with_suffix(".json.upstream")
+    if not attack_pristine.exists():
+        shutil.copy2(attack_config_path, attack_pristine)
+
+    attack_config = json.loads(attack_pristine.read_text())
+    for module, was in ATTACKER_REPOINT.items():
+        if module in attack_config:
+            attack_config[module]["endpoints"] = [ATTACKER_ENDPOINT]
+            print(f"repointed attack module {module}: {was} -> {ATTACKER_ENDPOINT}")
+    attack_config_path.write_text(json.dumps(attack_config, indent=4) + "\n")
 
     return 0
 

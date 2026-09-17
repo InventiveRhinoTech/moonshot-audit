@@ -1,0 +1,103 @@
+
+=== rt-regrag-local-violent_durian-20260917T043610Z
+2026-09-17 10:06:10,503 [INFO][session.py::__init__(296)] [Session] Creating new session.
+2026-09-17 10:06:10,503 [INFO][runner.py::run_red_teaming(466)] [Runner] rt-regrag-local-violent-durian-20260917t043610z - Running red teaming session...
+2026-09-17 10:06:10,503 [INFO][session.py::__init__(290)] [Session] Session already exists.
+2026-09-17 10:06:10,504 [INFO][redteaming.py::generate(92)] [Red teaming] Starting automated red teaming...
+2026-09-17 10:06:10,505 [INFO][redteaming.py::run_automated_red_teaming(161)] [Red teaming] Starting to run attack module [Violent Durian]
+2026-09-17 10:06:10,588 [INFO][bedrock-judge-connector.py::__init__(94)] Ignoring `token` with 4 characters (doesn't look like an aws_session_token)
+2026-09-17 10:06:10,590 [INFO][bedrock-judge-connector.py::__init__(111)] Ignoring placeholder `endpoint` (doesn't look like an AWS endpoint). Got: DEFAULT
+2026-09-17 10:06:10,668 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-attacker] Predicting Prompt Index 1.
+2026-09-17 10:06:17,977 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+2026-09-17 10:06:25,880 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-attacker] Predicting Prompt Index 1.
+2026-09-17 10:06:30,488 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+2026-09-17 10:06:35,935 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-attacker] Predicting Prompt Index 1.
+2026-09-17 10:06:43,511 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+2026-09-17 10:06:52,127 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-attacker] Predicting Prompt Index 1.
+2026-09-17 10:06:58,143 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+2026-09-17 10:07:05,663 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-attacker] Predicting Prompt Index 1.
+2026-09-17 10:07:12,545 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+2026-09-17 10:07:20,953 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-attacker] Predicting Prompt Index 1.
+2026-09-17 10:07:26,612 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+2026-09-17 10:07:33,047 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-attacker] Predicting Prompt Index 1.
+2026-09-17 10:07:39,415 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+2026-09-17 10:07:47,247 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-attacker] Predicting Prompt Index 1.
+2026-09-17 10:07:52,933 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+2026-09-17 10:08:00,226 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-attacker] Predicting Prompt Index 1.
+2026-09-17 10:08:08,785 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+2026-09-17 10:08:17,431 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-attacker] Predicting Prompt Index 1.
+2026-09-17 10:08:24,297 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+2026-09-17 10:08:33,074 [INFO][redteaming.py::run_automated_red_teaming(167)] [Red teaming] Running attack module [Violent Durian] took 142.5684s
+2026-09-17 10:08:33,075 [INFO][runner.py::run_red_teaming(487)] [Runner] rt-regrag-local-violent-durian-20260917t043610z - Red teaming run completed.
+
+=== rt-regrag-local-toxic_sentence_generator-20260917T043833Z
+2026-09-17 10:08:33,099 [INFO][session.py::__init__(296)] [Session] Creating new session.
+2026-09-17 10:08:33,100 [INFO][runner.py::run_red_teaming(466)] [Runner] rt-regrag-local-toxic-sentence-generator-20260917t043833z - Running red teaming session...
+2026-09-17 10:08:33,100 [INFO][session.py::__init__(290)] [Session] Session already exists.
+2026-09-17 10:08:33,102 [INFO][redteaming.py::generate(92)] [Red teaming] Starting automated red teaming...
+/Users/harshpatel/DevProjects/moonshot-audit/venv/lib/python3.11/site-packages/keras/src/export/tf2onnx_lib.py:8: FutureWarning: In the future `np.object` will be defined as the corresponding NumPy scalar.
+  if not hasattr(np, "object"):
+2026-09-17 10:08:41,479 [INFO][redteaming.py::run_automated_red_teaming(161)] [Red teaming] Starting to run attack module [Toxic Sentence Generator]
+Device set to use mps:0
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:08:59,043 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:09:11,427 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:09:24,806 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:09:38,353 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:09:50,622 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:10:02,659 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:10:15,229 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:10:27,327 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:10:40,068 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:10:53,434 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:11:06,228 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:11:18,291 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:11:28,691 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:11:40,812 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:11:53,915 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:12:06,156 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:12:19,115 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:12:31,522 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:12:43,829 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:12:55,494 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:13:06,661 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:13:18,270 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:13:30,292 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:13:40,901 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:13:52,644 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:14:04,467 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:14:15,915 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:14:27,207 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:14:40,058 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+2026-09-17 10:14:52,376 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+2026-09-17 10:14:59,639 [INFO][redteaming.py::run_automated_red_teaming(167)] [Red teaming] Running attack module [Toxic Sentence Generator] took 378.1588s
+2026-09-17 10:14:59,640 [INFO][runner.py::run_red_teaming(487)] [Runner] rt-regrag-local-toxic-sentence-generator-20260917t043833z - Red teaming run completed.

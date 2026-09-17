@@ -3,3 +3,4 @@ moonshot-data/
 moonshot-ui/
 __pycache__/
 *.pyc
+.DS_Store
