@@ -4,3 +4,22 @@ moonshot-ui/
 __pycache__/
 *.pyc
 .DS_Store
+
+# Secrets. This repository is public, so the rule is broad on purpose: match
+# anything that looks like a credential file rather than naming the one file we
+# happen to use today.
+#
+# The connectors read their keys from the environment — openai-connector.py
+# falls back to os.getenv("OPENAI_API_KEY"), and the Bedrock ones use the normal
+# AWS credential chain — so every committed endpoint JSON keeps "token": "" and
+# no key is ever written into a tracked file. `.env.secret` exists only to carry
+# a key into a shell:
+#
+#   source .env.secret && export $(cut -d= -f1 .env.secret)
+.env
+.env.*
+!.env.example
+*.secret
+*.pem
+*.key
+credentials.json

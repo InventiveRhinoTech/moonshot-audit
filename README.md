@@ -163,6 +163,24 @@ python scripts/install_into_moonshot_data.py
 python -m moonshot web            # UI http://localhost:3000, API :5000
 ```
 
+The installer writes `.env` — Moonshot's directory paths and web ports, nothing
+more. It is gitignored; [`.env.example`](.env.example) is the tracked copy.
+
+### Credentials
+
+**No key belongs in any file in this repository.** Every connector reads from the
+environment: `openai-connector.py` falls back to `os.getenv("OPENAI_API_KEY")`,
+and the Bedrock connectors use the normal AWS credential chain. Every committed
+endpoint JSON keeps `"token": ""`.
+
+To hand a key to a run without it touching a file git can see:
+
+```bash
+echo 'OPENAI_API_KEY=sk-...' > .env.secret     # matched by .gitignore
+set -a && source .env.secret && set +a
+export AWS_PROFILE=aws_rhino                   # Bedrock judge and attacker
+```
+
 **One more trap that cost more time than the connectors did:** `Runner.run_recipes` and
 `Runner.close` are coroutines annotated `-> None`. Call them without `await` and they return
 instantly, and the run appears to succeed having done nothing at all.
