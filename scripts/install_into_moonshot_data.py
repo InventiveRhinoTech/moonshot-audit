@@ -11,6 +11,7 @@ connector.
 
 from __future__ import annotations
 
+import argparse
 import json
 import shutil
 import sys
@@ -64,8 +65,26 @@ ATTACKER_REPOINT = {
 }
 ATTACKER_ENDPOINT = "bedrock-claude-attacker"
 
+# `--with-openai` leaves everything upstream assigns to OpenAI pointing at
+# OpenAI, and only substitutes what genuinely has nowhere else to go. Run it
+# when an OPENAI_API_KEY is exported; the endpoint files ship with `"token": ""`
+# and `openai-connector.py` falls back to `os.getenv("OPENAI_API_KEY")`, so no
+# key is written anywhere.
+#
+# Two things stay on Bedrock even then, because neither is an OpenAI endpoint
+# upstream: `llamaguardannotator` wants Llama Guard on Together, and
+# `cybersecevalannotator` wants Azure. Both remain disclosed substitutions.
+STAYS_SUBSTITUTED_WITH_OPENAI = {"cybersecevalannotator"}
+
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--with-openai", action="store_true",
+        help="keep upstream's OpenAI judges and attackers instead of Bedrock",
+    )
+    args = parser.parse_args()
+
     if not DATA.is_dir():
         print(f"{DATA} not found — run `python -m moonshot -i moonshot-data` first")
         return 1
@@ -84,7 +103,12 @@ def main() -> int:
 
     config = json.loads(pristine.read_text())
     for metric, was in JUDGE_REPOINT.items():
-        if metric in config:
+        if metric not in config:
+            continue
+        if args.with_openai and metric not in STAYS_SUBSTITUTED_WITH_OPENAI:
+            config[metric]["endpoints"] = [was]
+            print(f"kept upstream {metric}: {was}")
+        else:
             config[metric]["endpoints"] = [JUDGE_ENDPOINT]
             print(f"repointed {metric}: {was} -> {JUDGE_ENDPOINT}")
     if LLAMA_GUARD_METRIC in config:
@@ -92,8 +116,12 @@ def main() -> int:
         config[LLAMA_GUARD_METRIC]["endpoints"] = [LLAMA_GUARD_ENDPOINT]
         print(f"repointed {LLAMA_GUARD_METRIC}: {was} -> {LLAMA_GUARD_ENDPOINT}")
     if CYBERSECEVAL_METRIC in config:
-        config[CYBERSECEVAL_METRIC]["endpoints"] = [CYBERSECEVAL_ENDPOINT]
-        print(f"repointed {CYBERSECEVAL_METRIC}: openai-gpt4o -> {CYBERSECEVAL_ENDPOINT}")
+        if args.with_openai:
+            config[CYBERSECEVAL_METRIC]["endpoints"] = ["openai-gpt4o"]
+            print(f"kept upstream {CYBERSECEVAL_METRIC}: openai-gpt4o")
+        else:
+            config[CYBERSECEVAL_METRIC]["endpoints"] = [CYBERSECEVAL_ENDPOINT]
+            print(f"repointed {CYBERSECEVAL_METRIC}: openai-gpt4o -> {CYBERSECEVAL_ENDPOINT}")
     config_path.write_text(json.dumps(config, indent=4) + "\n")
 
     attack_config_path = DATA / "attack-modules" / "attack_modules_config.json"
@@ -103,7 +131,12 @@ def main() -> int:
 
     attack_config = json.loads(attack_pristine.read_text())
     for module, was in ATTACKER_REPOINT.items():
-        if module in attack_config:
+        if module not in attack_config:
+            continue
+        if args.with_openai:
+            attack_config[module]["endpoints"] = [was]
+            print(f"kept upstream attack module {module}: {was}")
+        else:
             attack_config[module]["endpoints"] = [ATTACKER_ENDPOINT]
             print(f"repointed attack module {module}: {was} -> {ATTACKER_ENDPOINT}")
     attack_config_path.write_text(json.dumps(attack_config, indent=4) + "\n")

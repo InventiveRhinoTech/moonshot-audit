@@ -49,7 +49,8 @@ def is_refusal(response: str) -> bool:
 # Endpoints that are ours rather than the system under test. A table named for
 # one of these holds the attacker model talking to itself, not an attack result.
 NON_TARGET = ("bedrock_claude_attacker", "bedrock_claude_judge",
-              "bedrock_claude_llamaguard", "bedrock_claude_cyberseceval")
+              "bedrock_claude_llamaguard", "bedrock_claude_cyberseceval",
+              "openai_gpt4", "openai_gpt4o", "llm_judge_openai_gpt4_annotator")
 
 
 def read(path: Path) -> tuple[list[dict], list[dict]]:

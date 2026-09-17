@@ -1,0 +1,47 @@
+
+=== rt-regrag-local-violent_durian-20260917T095440Z
+2026-09-17 15:24:40,349 [INFO][session.py::__init__(296)] [Session] Creating new session.
+2026-09-17 15:24:40,350 [INFO][runner.py::run_red_teaming(466)] [Runner] rt-regrag-local-violent-durian-20260917t095440z - Running red teaming session...
+2026-09-17 15:24:40,350 [INFO][session.py::__init__(290)] [Session] Session already exists.
+2026-09-17 15:24:40,351 [INFO][redteaming.py::generate(92)] [Red teaming] Starting automated red teaming...
+2026-09-17 15:24:40,351 [INFO][redteaming.py::run_automated_red_teaming(161)] [Red teaming] Starting to run attack module [Violent Durian]
+2026-09-17 15:24:40,563 [INFO][connector.py::get_prediction(356)] [Connector ID: openai-gpt4] Predicting Prompt Index 1.
+2026-09-17 15:24:53,361 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+2026-09-17 15:25:05,976 [INFO][connector.py::get_prediction(356)] [Connector ID: openai-gpt4] Predicting Prompt Index 1.
+2026-09-17 15:25:17,482 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+2026-09-17 15:25:26,069 [INFO][connector.py::get_prediction(356)] [Connector ID: openai-gpt4] Predicting Prompt Index 1.
+2026-09-17 15:25:32,067 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+2026-09-17 15:25:39,575 [INFO][connector.py::get_prediction(356)] [Connector ID: openai-gpt4] Predicting Prompt Index 1.
+2026-09-17 15:25:47,812 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+2026-09-17 15:25:58,532 [INFO][connector.py::get_prediction(356)] [Connector ID: openai-gpt4] Predicting Prompt Index 1.
+2026-09-17 15:26:09,282 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+2026-09-17 15:26:19,503 [INFO][connector.py::get_prediction(356)] [Connector ID: openai-gpt4] Predicting Prompt Index 1.
+2026-09-17 15:26:29,531 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+2026-09-17 15:26:39,744 [INFO][connector.py::get_prediction(356)] [Connector ID: openai-gpt4] Predicting Prompt Index 1.
+2026-09-17 15:26:46,680 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+2026-09-17 15:26:57,113 [INFO][connector.py::get_prediction(356)] [Connector ID: openai-gpt4] Predicting Prompt Index 1.
+2026-09-17 15:27:06,226 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+2026-09-17 15:27:06,254 [ERROR][connector.py::perform_retry_callback(45)] [Connector ID: regrag-local] Attempt 1 failed due to error: Client error '422 Unprocessable Entity' for url 'http://localhost:8000/v1/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2026-09-17 15:27:07,275 [ERROR][connector.py::perform_retry_callback(45)] [Connector ID: regrag-local] Attempt 2 failed due to error: Client error '422 Unprocessable Entity' for url 'http://localhost:8000/v1/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2026-09-17 15:27:09,028 [ERROR][connector.py::perform_retry_callback(45)] [Connector ID: regrag-local] Attempt 3 failed due to error: Client error '422 Unprocessable Entity' for url 'http://localhost:8000/v1/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2026-09-17 15:27:09,028 [ERROR][connector.py::get_prediction(384)] [Connector ID: regrag-local] Prompt Index 1 failed to get prediction: Client error '422 Unprocessable Entity' for url 'http://localhost:8000/v1/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2026-09-17 15:27:09,028 [ERROR][session.py::run(453)] [Session] Failed to run runner processing module in Part 3 due to error: Client error '422 Unprocessable Entity' for url 'http://localhost:8000/v1/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+!!! violent_durian FAILED: HTTPStatusError: Client error '422 Unprocessable Entity' for url 'http://localhost:8000/v1/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+
+=== rt-regrag-local-malicious_question_generator-20260917T095709Z
+2026-09-17 15:27:09,044 [INFO][session.py::__init__(296)] [Session] Creating new session.
+2026-09-17 15:27:09,045 [INFO][runner.py::run_red_teaming(466)] [Runner] rt-regrag-local-malicious-question-generator-20260917t095709z - Running red teaming session...
+2026-09-17 15:27:09,045 [INFO][session.py::__init__(290)] [Session] Session already exists.
+2026-09-17 15:27:09,047 [INFO][redteaming.py::generate(92)] [Red teaming] Starting automated red teaming...
+2026-09-17 15:27:09,048 [INFO][redteaming.py::run_automated_red_teaming(161)] [Red teaming] Starting to run attack module [Malicious Question Generator]
+2026-09-17 15:27:09,055 [INFO][connector.py::get_prediction(356)] [Connector ID: openai-gpt4] Predicting Prompt Index 1.
+2026-09-17 15:27:11,432 [WARNING][malicious_question_generator.py::perform_attack_manually(102)] The LLM may not have returned the desired response.
+2026-09-17 15:27:11,433 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 1.
+2026-09-17 15:27:13,460 [INFO][redteaming.py::run_automated_red_teaming(167)] [Red teaming] Running attack module [Malicious Question Generator] took 4.4114s
+2026-09-17 15:27:13,460 [INFO][runner.py::run_red_teaming(487)] [Runner] rt-regrag-local-malicious-question-generator-20260917t095709z - Red teaming run completed.
