@@ -109,6 +109,12 @@ an immutable one, and the overlap raises `RuntimeError: Already borrowed`.
 It is reported as observed-once with the mechanism read from the code, **not as a rate**.
 `raw-results/regrag-rerank-concurrency-repro.txt`, and `scripts/repro_rerank_concurrency.py`.
 
+**Fixed on 17 September.** The two calls take module constants, so they were re-applying identical
+settings on every request; moving them to the cached loader removes the mutation instead of guarding
+it, and leaves `score()` read-only against the tokenizer. Clean at concurrency 1 through 8 over 120
+requests. The regression test guarding it passed vacuously on the first attempt — it named a
+`Protocol` whose method is an empty stub — and only failed once the bug was deliberately put back.
+
 **Moonshot's own `@perform_retry` retried that failure and it passed.** Without reading the
 container log it would never have appeared in any score. A benchmark that retries reports
 availability it did not measure.
@@ -253,8 +259,9 @@ component. Attribution is welcome but not required.
 ## Why publish an audit of your own systems
 
 Because an evaluation where everything passes teaches nobody anything, including the person who ran
-it. The useful output of this run was a data race in my own code, two scoring faults in a national
-test suite, and one grade I published wrong before I published it right.
+it. The useful output of this run was a data race in my own code — since fixed — two scoring faults
+in a national test suite, one grade I published wrong before I published it right, and a judge swap
+that moved a published grade from A to B on responses that never changed.
 
 All of it is here.
 

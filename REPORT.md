@@ -444,6 +444,7 @@ quoted without naming its judge model is missing the information needed to repro
    concurrency 1, 2, 4 and 6, warm and cold. Reported as observed-once with the mechanism read from
    the code, not as a rate. Evidence:
    `raw-results/regrag-rerank-concurrency-repro.txt`.
+   **Fixed 17 September 2026** — see section 7.
 
 3. **Moonshot's retry hid that 500 from the score.** `@perform_retry` retried the failed call and it
    succeeded. Had I not been reading the container log, the failure would not have appeared in any
@@ -529,27 +530,62 @@ quoted without naming its judge model is missing the information needed to repro
 
 ## 7. What changed as a result
 
-**Nothing has been changed in either system yet, and here is why for each.**
+### The data race is fixed
 
-The one change this audit argues for is not in either system: **quote no Starter Kit grade
-without naming the judge model beside it.** Section 4b is why.
+Finding 2 is closed. `RegRAG@8184580`:
 
-- **The reranker data race** (finding 2) is real and the fix is small — build the tokenizer per
-  call, or guard it with a lock, or make `post_query` async. It has not been fixed because the
-  repro is not reliable yet, and a fix that cannot be shown to fix anything is not a fix. The repro
-  script is committed so this can be revisited.
-- **The 2,000-character question limit** (finding 4) is working as designed. No change.
+`enable_truncation()` and `enable_padding()` were being called inside `score()` on every request,
+against a tokenizer `_load()` caches for the whole process. Both take module constants — they were
+re-applying identical settings, which is why putting them in the hot path had looked free. Moving
+them into `_load()`, which runs once, removes the mutation rather than guarding it, so `score()` is
+now read-only against the tokenizer. A lock would also have worked and would have serialised every
+rerank in the process.
+
+Verified at concurrency 1, 2, 4, 6 and 8 over 120 requests, then four concurrent live SSE streams:
+no 500s, no `Already borrowed` in the container log.
+
+**The regression test that guards it was worthless on the first attempt, and that is worth
+recording.** It named the class `Reranker` — a `Protocol` whose `score` is an empty stub — so it
+inspected a signature, found no mutation and passed. It only surfaced because I put the bug back
+deliberately and watched the test stay green. It now scans every class in the module defining
+`score` and asserts up front that it found `OnnxCrossEncoder`. A test that cannot fail is worse than
+no test, and this one proved it.
+
+### What fixing it uncovered
+
+Verifying the fix meant running RegRAG's own suite, where **29 integration tests were already
+failing** — nothing to do with the audit, and confirmed pre-existing by stashing every change
+including untracked files and getting the identical count. The fixture corpus holds 148 chunks while
+the recorded reranker scores covered 113; the corpus had grown and nothing re-froze them.
+`RegRAG@db7be00` re-records both variants and closes two things that had hidden it: an export script
+that reported success while skipping a rebuild, and a test `wipe()` that cleared the corpus but not
+`alert_subscriptions`, so a category subscription outlived every wipe and made one test fail only in
+a full run. **393 passed, 3 skipped, nothing failing.**
+
+Worth noting for its own sake: the int8 re-record came back **byte-identical on all 660 overlapping
+scores**, max delta 0.000000, with 30 keys added. The recorded-score approach reproduces exactly
+across a month. The fp32 numbers moved, but because its 2.3 GB weights had been deleted and the
+export was rebuilt on a newer toolchain — recall is unchanged.
+
+### What has *not* changed, and why
+
+- **The 2,000-character question limit** (finding 4) is working as designed. No change. It
+  incidentally blocked one GPT-4 jailbreak in 3.4c, which is luck, not a control.
 - **No content-safety layer has been added** to either system. The A grades in 3.2 do not justify
   one, and neither do they justify claiming one exists. The gap named in the PRD is still a gap;
-  what changed is that I now know the refusal gate masks it on this corpus.
+  what changed is that we now know the refusal gate masks it on this corpus — and that a second
+  judge (4b) marks nine of those refusals inadequate for exactly that reason.
+- **Nothing in `langgraph-agent`.** It was measured on one risk of four.
 
-Changed in the audit rig rather than the systems:
+### Changed in the audit rig rather than the systems
 
 - `bedrock-judge-connector.py` returns a sentinel instead of raising when Bedrock returns an empty
   assistant message. Upstream's connector raises, which cost an entire 50-prompt recipe for one
   declined judgement.
 - Two annotator metrics were given endpoints whose prompts supply the output contract their parsers
   assume. Section 2.
+- `summarise_red_teaming.py` now separates the target's table from the attacker's, and prints a
+  standing warning for any module whose attacker declined. See finding 10.
 
 ---
 
@@ -561,9 +597,9 @@ Changed in the audit rig rather than the systems:
 > benchmark's exact-string scorer cannot tell the two apart. Across 529 scored prompts covering all
 > four Starter Kit risks it fabricated nothing and disclosed nothing, and neither 50 prompt
 > injections nor 132 generated adversarial attacks — including a GPT-4-authored multi-turn jailbreak
-> — changed its behaviour. I ran every safety test under two independent judge models, and
-> publishing where they disagreed cost me a grade: identical responses scored A under one and B
-> under the other.
+> — changed its behaviour. **The run also found a real concurrency defect in my own code, which is
+> now fixed and tested.** I ran every safety test under two independent judge models, and publishing
+> where they disagreed cost me a grade: identical responses scored A under one and B under the other.
 
 ---
 
