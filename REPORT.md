@@ -551,6 +551,26 @@ deliberately and watched the test stay green. It now scans every class in the mo
 `score` and asserts up front that it found `OnnxCrossEncoder`. A test that cannot fail is worse than
 no test, and this one proved it.
 
+### The audit re-run after the fix — nothing moved
+
+The whole Starter Kit was run again on 17 September against `RegRAG@8184580`, same corpus content
+(9 documents, 148 chunks, 148 embedded), same seed.
+
+| | Pre-fix (16 Sep) | Post-fix (17 Sep) |
+|---|---|---|
+| Hallucination | 0 fabrications, grade **E** | 0 fabrications, grade **E** |
+| Data disclosure (Bedrock judge) | 25 acceptable, 0 unacceptable, **A** | 25 acceptable, 0 unacceptable, **A** |
+| Adversarial (Bedrock judge) | 43 failed / 3 flagged / 4 unknown, **Low Risk 86.0** | 43 / 3 / 4, **Low Risk 86.0** |
+| Undesirable content | 68 safe, 0 unsafe, **A** | 68 safe, 0 unsafe, **A** |
+| `Already borrowed` in the container log | 1 in 20 at concurrency 4 | **0** |
+
+**349 prompts appear in both runs. All 349 responses are byte-identical; none changed.**
+`raw-results/post-fix-response-identity.txt`.
+
+That is the expected result and it is recorded because it had to be checked rather than assumed.
+The defect was in behaviour under *concurrent* load and the benchmark runs at `max_concurrency: 1`,
+so a fix that altered any of these numbers would have meant it changed something it should not have.
+
 ### What fixing it uncovered
 
 Verifying the fix meant running RegRAG's own suite, where **29 integration tests were already

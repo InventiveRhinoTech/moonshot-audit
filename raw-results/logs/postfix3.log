@@ -1,0 +1,176 @@
+
+=== regrag-local-data-disclosure-mlc-prv-en-20260917T124155Z  (25% of each dataset, seed 20260916)
+2026-09-17 18:11:55,845 [INFO][runner.py::run_recipes(349)] [Runner] regrag-local-data-disclosure-mlc-prv-en-20260917t124155z - Running benchmark recipe run...
+2026-09-17 18:11:55,886 [INFO][benchmarking.py::generate(169)] [Benchmarking] Running recipes (['mlc-prv-en'])...
+2026-09-17 18:11:55,886 [INFO][benchmarking.py::generate(173)] [Benchmarking] Running recipe mlc-prv-en... (1/1)
+2026-09-17 18:11:55,889 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 5.
+2026-09-17 18:11:55,918 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 13.
+2026-09-17 18:11:55,918 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 20.
+2026-09-17 18:11:55,918 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 22.
+2026-09-17 18:11:55,918 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 30.
+2026-09-17 18:11:55,918 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 31.
+2026-09-17 18:11:55,918 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 34.
+2026-09-17 18:11:55,918 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 47.
+2026-09-17 18:11:55,918 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 48.
+2026-09-17 18:11:55,918 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 55.
+2026-09-17 18:12:24,401 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 56.
+2026-09-17 18:12:24,410 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 64.
+2026-09-17 18:12:24,410 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 68.
+2026-09-17 18:12:24,410 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 69.
+2026-09-17 18:12:24,410 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 71.
+2026-09-17 18:12:24,410 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 73.
+2026-09-17 18:12:24,410 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 75.
+2026-09-17 18:12:24,411 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 77.
+2026-09-17 18:12:24,411 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 78.
+2026-09-17 18:12:24,411 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 80.
+2026-09-17 18:12:54,183 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 82.
+2026-09-17 18:12:54,192 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 84.
+2026-09-17 18:12:54,192 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 87.
+2026-09-17 18:12:54,192 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 91.
+2026-09-17 18:12:54,192 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 99.
+2026-09-17 18:13:07,476 [INFO][bedrock-judge-connector.py::__init__(94)] Ignoring `token` with 4 characters (doesn't look like an aws_session_token)
+2026-09-17 18:13:07,479 [INFO][bedrock-judge-connector.py::__init__(111)] Ignoring placeholder `endpoint` (doesn't look like an AWS endpoint). Got: DEFAULT
+2026-09-17 18:13:07,556 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 0.
+2026-09-17 18:13:12,644 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 1.
+2026-09-17 18:13:20,076 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 2.
+2026-09-17 18:13:25,544 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 3.
+2026-09-17 18:13:31,180 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 4.
+2026-09-17 18:13:36,525 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 5.
+2026-09-17 18:13:41,209 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 6.
+2026-09-17 18:13:46,636 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 7.
+2026-09-17 18:13:52,473 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 8.
+2026-09-17 18:13:58,042 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 9.
+2026-09-17 18:14:04,351 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 10.
+2026-09-17 18:14:11,009 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 11.
+2026-09-17 18:14:17,563 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 12.
+2026-09-17 18:14:22,783 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 13.
+2026-09-17 18:14:27,494 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 14.
+2026-09-17 18:14:32,787 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 15.
+2026-09-17 18:14:37,939 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 16.
+2026-09-17 18:14:43,884 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 17.
+2026-09-17 18:14:49,307 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 18.
+2026-09-17 18:14:54,892 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 19.
+2026-09-17 18:14:59,961 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 20.
+2026-09-17 18:15:04,740 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 21.
+2026-09-17 18:15:09,847 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 22.
+2026-09-17 18:15:15,212 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 23.
+2026-09-17 18:15:20,709 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-judge] Predicting Prompt Index 24.
+2026-09-17 18:15:26,481 [INFO][benchmarking.py::generate(203)] [Benchmarking] Run took 210.5950s
+2026-09-17 18:15:26,483 [INFO][benchmarking.py::generate(258)] [Benchmarking] Preparing results took 0.0001s
+2026-09-17 18:15:26,489 [INFO][benchmarking-result.py::generate(58)] [BenchmarkingResult] Generate results took 0.0062s
+2026-09-17 18:15:26,492 [INFO][runner.py::run_recipes(375)] [Runner] regrag-local-data-disclosure-mlc-prv-en-20260917t124155z - Benchmark recipe run completed.
+
+=== regrag-local-adversarial-cyberseceval-en-20260917T124527Z  (20% of each dataset, seed 20260916)
+2026-09-17 18:15:27,226 [INFO][runner.py::run_recipes(349)] [Runner] regrag-local-adversarial-cyberseceval-en-20260917t124527z - Running benchmark recipe run...
+2026-09-17 18:15:27,267 [INFO][benchmarking.py::generate(169)] [Benchmarking] Running recipes (['cyberseceval-en'])...
+2026-09-17 18:15:27,267 [INFO][benchmarking.py::generate(173)] [Benchmarking] Running recipe cyberseceval-en... (1/1)
+2026-09-17 18:15:27,270 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 10.
+2026-09-17 18:15:27,299 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 11.
+2026-09-17 18:15:27,299 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 27.
+2026-09-17 18:15:27,299 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 32.
+2026-09-17 18:15:27,299 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 40.
+2026-09-17 18:15:27,299 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 44.
+2026-09-17 18:15:27,299 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 46.
+2026-09-17 18:15:27,299 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 61.
+2026-09-17 18:15:27,299 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 62.
+2026-09-17 18:15:27,299 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 63.
+2026-09-17 18:16:02,452 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 68.
+2026-09-17 18:16:02,460 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 76.
+2026-09-17 18:16:02,461 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 94.
+2026-09-17 18:16:02,461 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 97.
+2026-09-17 18:16:02,461 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 103.
+2026-09-17 18:16:02,461 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 105.
+2026-09-17 18:16:02,461 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 106.
+2026-09-17 18:16:02,461 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 111.
+2026-09-17 18:16:02,461 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 112.
+2026-09-17 18:16:02,461 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 116.
+2026-09-17 18:16:40,086 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 121.
+2026-09-17 18:16:40,094 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 124.
+2026-09-17 18:16:40,094 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 128.
+2026-09-17 18:16:40,094 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 129.
+2026-09-17 18:16:40,095 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 135.
+2026-09-17 18:16:40,095 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 136.
+2026-09-17 18:16:40,095 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 138.
+2026-09-17 18:16:40,095 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 143.
+2026-09-17 18:16:40,095 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 146.
+2026-09-17 18:16:40,095 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 151.
+2026-09-17 18:17:11,203 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 152.
+2026-09-17 18:17:11,211 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 154.
+2026-09-17 18:17:11,211 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 156.
+2026-09-17 18:17:11,211 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 163.
+2026-09-17 18:17:11,211 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 164.
+2026-09-17 18:17:11,212 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 169.
+2026-09-17 18:17:11,212 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 174.
+2026-09-17 18:17:11,212 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 188.
+2026-09-17 18:17:11,212 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 191.
+2026-09-17 18:17:11,212 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 195.
+2026-09-17 18:17:46,847 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 202.
+2026-09-17 18:17:46,855 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 204.
+2026-09-17 18:17:46,855 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 206.
+2026-09-17 18:17:46,855 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 208.
+2026-09-17 18:17:46,855 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 220.
+2026-09-17 18:17:46,855 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 221.
+2026-09-17 18:17:46,856 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 222.
+2026-09-17 18:17:46,856 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 241.
+2026-09-17 18:17:46,856 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 248.
+2026-09-17 18:17:46,856 [INFO][connector.py::get_prediction(356)] [Connector ID: regrag-local] Predicting Prompt Index 250.
+2026-09-17 18:18:39,825 [INFO][bedrock-judge-connector.py::__init__(94)] Ignoring `token` with 4 characters (doesn't look like an aws_session_token)
+2026-09-17 18:18:39,857 [INFO][bedrock-judge-connector.py::__init__(111)] Ignoring placeholder `endpoint` (doesn't look like an AWS endpoint). Got: DEFAULT
+2026-09-17 18:18:39,915 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 0.
+2026-09-17 18:18:45,007 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 1.
+2026-09-17 18:18:49,450 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 2.
+2026-09-17 18:18:55,067 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 3.
+2026-09-17 18:18:56,794 [WARNING][bedrock-judge-connector.py::get_response(183)] [Connector ID: bedrock-claude-cyberseceval] Bedrock returned no content; recording NO_JUDGEMENT
+2026-09-17 18:18:56,795 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 4.
+2026-09-17 18:19:01,463 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 5.
+2026-09-17 18:19:06,513 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 6.
+2026-09-17 18:19:11,551 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 7.
+2026-09-17 18:19:24,651 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 8.
+2026-09-17 18:19:29,158 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 9.
+2026-09-17 18:19:34,155 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 10.
+2026-09-17 18:19:39,925 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 11.
+2026-09-17 18:19:45,840 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 12.
+2026-09-17 18:19:51,980 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 13.
+2026-09-17 18:19:58,041 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 14.
+2026-09-17 18:20:02,238 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 15.
+2026-09-17 18:20:08,281 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 16.
+2026-09-17 18:20:13,278 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 17.
+2026-09-17 18:20:19,239 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 18.
+2026-09-17 18:20:22,786 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 19.
+2026-09-17 18:20:27,790 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 20.
+2026-09-17 18:20:32,754 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 21.
+2026-09-17 18:20:37,829 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 22.
+2026-09-17 18:20:42,381 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 23.
+2026-09-17 18:20:47,284 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 24.
+2026-09-17 18:20:52,280 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 25.
+2026-09-17 18:20:57,035 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 26.
+2026-09-17 18:21:02,937 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 27.
+2026-09-17 18:21:08,210 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 28.
+2026-09-17 18:21:12,450 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 29.
+2026-09-17 18:21:18,752 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 30.
+2026-09-17 18:21:23,750 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 31.
+2026-09-17 18:21:30,285 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 32.
+2026-09-17 18:21:35,034 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 33.
+2026-09-17 18:21:39,990 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 34.
+2026-09-17 18:21:44,364 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 35.
+2026-09-17 18:21:49,679 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 36.
+2026-09-17 18:21:55,902 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 37.
+2026-09-17 18:22:00,330 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 38.
+2026-09-17 18:22:06,604 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 39.
+2026-09-17 18:22:12,387 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 40.
+2026-09-17 18:22:16,536 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 41.
+2026-09-17 18:22:18,537 [WARNING][bedrock-judge-connector.py::get_response(183)] [Connector ID: bedrock-claude-cyberseceval] Bedrock returned no content; recording NO_JUDGEMENT
+2026-09-17 18:22:18,538 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 42.
+2026-09-17 18:22:20,371 [WARNING][bedrock-judge-connector.py::get_response(183)] [Connector ID: bedrock-claude-cyberseceval] Bedrock returned no content; recording NO_JUDGEMENT
+2026-09-17 18:22:20,371 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 43.
+2026-09-17 18:22:22,299 [WARNING][bedrock-judge-connector.py::get_response(183)] [Connector ID: bedrock-claude-cyberseceval] Bedrock returned no content; recording NO_JUDGEMENT
+2026-09-17 18:22:22,300 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 44.
+2026-09-17 18:22:28,607 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 45.
+2026-09-17 18:22:35,069 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 46.
+2026-09-17 18:22:40,243 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 47.
+2026-09-17 18:22:44,883 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 48.
+2026-09-17 18:22:50,515 [INFO][connector.py::get_prediction(356)] [Connector ID: bedrock-claude-cyberseceval] Predicting Prompt Index 49.
+2026-09-17 18:22:55,381 [INFO][benchmarking.py::generate(203)] [Benchmarking] Run took 448.1175s
+2026-09-17 18:22:55,385 [INFO][benchmarking.py::generate(258)] [Benchmarking] Preparing results took 0.0001s
+2026-09-17 18:22:55,395 [INFO][benchmarking-result.py::generate(58)] [BenchmarkingResult] Generate results took 0.0106s
+2026-09-17 18:22:55,399 [INFO][runner.py::run_recipes(375)] [Runner] regrag-local-adversarial-cyberseceval-en-20260917t124527z - Benchmark recipe run completed.

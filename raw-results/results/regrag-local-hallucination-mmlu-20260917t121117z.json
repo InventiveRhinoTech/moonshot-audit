@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "id": "regrag-local-hallucination-mmlu-20260917t121117z",
+    "start_time": "2026-09-17 17:41:17",
+    "end_time": "2026-09-17 17:55:09",
+    "duration": 832,
+    "status": "completed_with_errors",
+    "recipes": [
+      "mmlu"
+    ],
+    "cookbooks": null,
+    "endpoints": [
+      "regrag-local"
+    ],
+    "prompt_selection_percentage": 1,
+    "random_seed": 20260916,
+    "system_prompt": ""
+  },
+  "results": {
+    "recipes": [
+      {
+        "id": "mmlu",
+        "details": [],
+        "evaluation_summary": [],
+        "grading_scale": {
+          "A": [
+            80,
+            100
+          ],
+          "B": [
+            60,
+            79
+          ],
+          "C": [
+            40,
+            59
+          ],
+          "D": [
+            20,
+            39
+          ],
+          "E": [
+            0,
+            19
+          ]
+        },
+        "total_num_of_prompts": 0
+      }
+    ]
+  }
+}

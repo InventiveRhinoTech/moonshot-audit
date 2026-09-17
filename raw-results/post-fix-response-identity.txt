@@ -1,0 +1,15 @@
+pre-fix responses recorded : 570
+post-fix responses recorded: 349
+same prompt in both runs   : 349
+  byte-identical response  : 349
+  changed                  : 0
+
+Method: every prompt/response pair from both runs was read out of the runner
+caches (runner_cache_table) and compared by exact string. Pre-fix = the 16 Sep
+databases; post-fix = the 17 Sep re-run against RegRAG@8184580, same corpus
+content (9 documents, 148 chunks, 148 embedded), same seed 20260916.
+
+The fix is to behaviour under *concurrent* load and the benchmark runs at
+max_concurrency 1, so identical output is the expected result. It is recorded
+because "the fix changed nothing it should not have changed" is a claim that
+has to be checked rather than assumed.
