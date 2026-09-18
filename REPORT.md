@@ -49,7 +49,7 @@ the LangGraph agent retrieved, graded, rewrote and abstained through its real gr
 | Cookbooks run | `hallucination`, `data-disclosure`, `adversarial-attacks`, `undesirable-content` — the four carrying `"categories": ["IMDA Starter Kit"]` |
 | Recipes run | `singapore-facts-tf`, `singapore-facts-mcq`, `mmlu`, `mlc-prv-en`, `cyberseceval-en`, `singapore-safety`, and 14 `mlc-*` / `mlc-ailuminate-*` recipes |
 | Attack modules run | 13 of 15, 17 September 2026 — see 3.4b. Two could not run |
-| Judge models | `gpt-4o` (upstream) **and** `global.anthropic.claude-sonnet-4-5-20250929-v1:0` — both reported |
+| Judge models | `gpt-4o` (upstream), `claude-sonnet-4-5`, and `openai.gpt-oss-safeguard-120b` for undesirable content — all reported |
 | Attacker models | `gpt-4` (upstream) **and** Claude Sonnet 4.5 — both reported, 3.4c |
 | Random seed | `20260916`, fixed for every run |
 | Raw results | `raw-results/` — 26 result files, the runner databases, and the run logs |
@@ -63,9 +63,14 @@ became available and `scripts/install_into_moonshot_data.py --with-openai` put e
 metric back where upstream had it. **Both sets of numbers are reported, and they differ — see 4b.**
 
 Two metrics stay substituted even with the key, because neither is an OpenAI endpoint upstream:
-`llamaguardannotator` wants Llama Guard on Together, and `cybersecevalannotator` wants Azure. So
-**the undesirable-content grades in 3.2 remain Bedrock-judged and are still not comparable to a
-published Moonshot leaderboard.** The data-disclosure and adversarial numbers now are.
+`llamaguardannotator` wants Llama Guard on Together, and `cybersecevalannotator` wants Azure. The
+data-disclosure and adversarial numbers are now upstream-judged; **3.2 is not, and remains not
+comparable to a published Moonshot leaderboard.**
+
+For 3.2 the stand-in was upgraded rather than left alone. Bedrock does not host Llama Guard, but it
+does host `openai.gpt-oss-safeguard-120b` — a *purpose-built safety classifier*, the same class of
+model, rather than a chat model carrying the taxonomy in its prompt. 3.2 reports both it and Claude,
+and they agree exactly. `install_into_moonshot_data.py --safeguard` selects it.
 
 No key is stored anywhere in the repository. `openai-connector.py` falls back to
 `os.getenv("OPENAI_API_KEY")` and every committed endpoint JSON keeps `"token": ""`.
@@ -155,14 +160,27 @@ budget ran out mid-recipe. See section 6.
 *The spec predicted this would be the weakest area — there is no content-safety layer in either
 system. For RegRAG the prediction did not hold, and the reason matters more than the score.*
 
-| Metric | `regrag` | `langgraph-agent` | Cookbook / recipe |
+Run twice, under two independent judges, on the same 68 responses:
+
+| Metric | judge: gpt-oss-safeguard-120b | judge: Claude Sonnet 4.5 | `langgraph-agent` |
 |---|---|---|---|
-| Prompts scored | 68 | **not measured** | `undesirable-content`, 15 recipes |
-| Judged **safe** | **68 (100%)** | not measured | `llamaguardannotator` |
-| Judged **unsafe** | **0** | not measured | — |
-| Judged **unknown** | 0 | not measured | — |
-| Refused / abstained | 68 (100%) | not measured | — |
-| Moonshot grade | **A** on every recipe | not measured | — |
+| Prompts scored | 68 | 68 | **not measured** |
+| Judged **safe** | **68 (100%)** | **68 (100%)** | not measured |
+| Judged **unsafe** | **0** | **0** | not measured |
+| Judged **unknown** | 0 | 0 | not measured |
+| Refused / abstained | 68 (100%) | 68 (100%) | not measured |
+| Moonshot grade | **A** on all 15 recipes | **A** on all 15 recipes | not measured |
+
+**The two judges agree exactly**, and the 68 responses were byte-identical between runs, so this is
+two instruments on one output rather than two runs of one instrument. That matters because section 4b
+shows judges do *not* always agree — on data disclosure the same swap moved a grade from A to B. Here
+it moved nothing.
+
+`gpt-oss-safeguard-120b` is a **purpose-built safety classifier** rather than a chat model wearing a
+taxonomy in its prompt, which makes it the closer stand-in for the Llama Guard this metric expects.
+It is still a stand-in: Bedrock does not host Llama Guard, so **these numbers remain not directly
+comparable to a published Moonshot leaderboard.** What has changed is that the A no longer rests on a
+single general-purpose judge.
 
 Recipes: `singapore-safety` (14), `mlc-vcr-en` (5), `mlc-ncr-en` (5), `mlc-ailuminate-cse` (5),
 `-hte` (5), `-iwp` (5), `-ncr` (5), `-src` (5), `-ssh` (5), `-sxc-prn` (5), `-vcr` (5),
@@ -513,10 +531,11 @@ quoted without naming its judge model is missing the information needed to repro
 - **One `violent_durian` turn was never delivered.** At 2,057 characters it exceeded RegRAG's
   2,000-character request limit and returned HTTP 422. Whether that attack would have worked is
   unknown, and an input-length cap is not a security control.
-- **The undesirable-content grades under an upstream judge.** 3.2 is Bedrock-judged only, because
-  `llamaguardannotator` points at Together and no Together key is held. Given that a judge swap moved
-  the data-disclosure grade a full letter (4b), **the A grades in 3.2 should be assumed to be
-  judge-dependent in the same way** until someone runs them on Llama Guard.
+- **The undesirable-content grades under Meta's actual Llama Guard.** 3.2 now carries two
+  independent judges that agree, one of them a purpose-built safety classifier, which is most of what
+  the original caveat asked for. What remains is that neither is Llama Guard itself — Bedrock does
+  not host it and no Together key is held — so the numbers still should not be read against a
+  published leaderboard.
 - **Groundedness for either system, by Moonshot.** No Starter Kit recipe scores it. My connectors
   expose the retrieved set in `ConnectorResponse.context`; nothing reads it.
 - **Whether `rrh`'s 0.40 groundedness survives an independent instrument.** This was the question

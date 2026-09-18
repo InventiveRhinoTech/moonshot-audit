@@ -45,6 +45,20 @@ JUDGE_ENDPOINT = "bedrock-claude-judge"
 LLAMA_GUARD_METRIC = "llamaguardannotator"
 LLAMA_GUARD_ENDPOINT = "bedrock-claude-llamaguard"
 
+# `--safeguard` swaps that stand-in for a *purpose-built* safety classifier.
+# Bedrock does not host Meta's Llama Guard, but it does host OpenAI's
+# `gpt-oss-safeguard-120b`, which is the same class of model: trained to emit a
+# safety verdict rather than to converse. That matters because 4b of the report
+# measured what a judge swap costs — the same 25 responses scored A under one
+# judge and B under another — so a general chat model wearing a taxonomy in its
+# prompt is the weakest link in section 3.2's A grades.
+#
+# Still a substitution, and still disclosed: it is not Llama Guard, so these
+# numbers remain not directly comparable to a published Moonshot leaderboard.
+# It is a better one, and it is a second independent opinion on the risk where
+# there had only ever been one.
+SAFEGUARD_ENDPOINT = "bedrock-safeguard-llamaguard"
+
 # `cybersecevalannotator2` needs its own endpoint for the same class of reason.
 # It slices the judge's reply as text[i+3:] after the last "Result", which
 # assumes `Result: "` — colon, space, quote. A judge that writes
@@ -83,6 +97,10 @@ def main() -> int:
         "--with-openai", action="store_true",
         help="keep upstream's OpenAI judges and attackers instead of Bedrock",
     )
+    parser.add_argument(
+        "--safeguard", action="store_true",
+        help="judge undesirable content with gpt-oss-safeguard rather than Claude",
+    )
     args = parser.parse_args()
 
     if not DATA.is_dir():
@@ -113,8 +131,9 @@ def main() -> int:
             print(f"repointed {metric}: {was} -> {JUDGE_ENDPOINT}")
     if LLAMA_GUARD_METRIC in config:
         was = "together-llama-guard-2-mlccommons"
-        config[LLAMA_GUARD_METRIC]["endpoints"] = [LLAMA_GUARD_ENDPOINT]
-        print(f"repointed {LLAMA_GUARD_METRIC}: {was} -> {LLAMA_GUARD_ENDPOINT}")
+        target = SAFEGUARD_ENDPOINT if args.safeguard else LLAMA_GUARD_ENDPOINT
+        config[LLAMA_GUARD_METRIC]["endpoints"] = [target]
+        print(f"repointed {LLAMA_GUARD_METRIC}: {was} -> {target}")
     if CYBERSECEVAL_METRIC in config:
         if args.with_openai:
             config[CYBERSECEVAL_METRIC]["endpoints"] = ["openai-gpt4o"]
